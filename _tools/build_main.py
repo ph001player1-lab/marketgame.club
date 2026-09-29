@@ -46,7 +46,7 @@ GROUPS = {'intl': 'intl', 'eastern': 'et', 'ny': 'et', 'fl': 'et', 'central': 'c
           'mountain': 'mt', 'co': 'mt', 'az': 'mt', 'pacific': 'pt', 'ca': 'pt', 'wa': 'pt'}
 ZONE_STREAMS = ('eastern', 'central', 'mountain', 'pacific')
 STATE_STREAMS = ('ny', 'fl', 'tx', 'il', 'co', 'az', 'ca', 'wa')
-FAQ_IDS = [(126, 127), (128, 129), (130, 131), (132, 133), (134, 135), (136, 137), (138, 139), (140, 141), (142, 143)]
+FAQ_IDS = [(126, 127), (128, 129), (160, 161), (130, 131), (132, 133), (134, 135), (136, 137), (138, 139), (140, 141), (142, 143)]
 CLOCK_TZ = [('la', 'America/Los_Angeles'), ('den', 'America/Denver'), ('chi', 'America/Chicago'),
             ('nyc', 'America/New_York'), ('lon', 'Europe/London'), ('utc', 'UTC')]
 
@@ -147,6 +147,8 @@ def form_cfg(lang, M, RU):
     for k in ('l12', 'l24', 'l36'):
         labels[k] = f'{M.LEAGUE_FULL[k]} — {M.PRICE_TXT[k]}'
         mgr[k] = f'{RU.LEAGUE_FULL[k]} — {M.PRICE_TXT[k]}'     # цена — та, что видел посетитель
+    labels['watch'] = M.FORM_WATCH            # бесплатно посмотреть игру зрителем
+    mgr['watch'] = RU.FORM_WATCH_MANAGER
     return {
         'endpoint': ENDPOINT, 'lang': lang, 'privacyUrl': 'privacy.html',
         'fallback': {'url': 'https://t.me/nickbv', 'label': '@nickbv'},

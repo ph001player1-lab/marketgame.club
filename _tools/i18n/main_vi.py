@@ -18,6 +18,7 @@ KIND = {'intl': 'Ván mở · quốc tế', 'zone': 'Ván mở · múi giờ', '
 FILTERS = {'all': 'Tất cả', 'et': 'Miền Đông', 'ct': 'Miền Trung', 'mt': 'Miền Núi', 'pt': 'Thái Bình Dương',
            'intl': 'Quốc tế'}
 SCHED_TEXT = {
+    'watch': 'Xem miễn phí',
     'duration': '{h} giờ',
     'yourTime': 'giờ của bạn',
     'soonest': 'gần nhất',
@@ -29,6 +30,7 @@ SCHED_TEXT = {
     'filterLabel': 'Xem các ván theo khu vực',
 }
 FORM_LEAGUE_NONE = 'Chưa quyết định'
+FORM_WATCH = 'Xem một ván — miễn phí'
 FORM_TEXT = {
     'title': 'Đăng ký tham gia',
     'subtitle': 'Chúng tôi phản hồi trong ngày và báo bạn về các ván chơi sắp tới.',
@@ -251,4 +253,8 @@ T = {
   157: 'Bạn điều hành một công ty: giá, chất lượng, sáu kênh quảng cáo, ngân sách quảng cáo, số bàn, nhân viên, các khoản vay và đầu tư',
   158: 'Thị trường tự tính: các công ty ra quyết định, mô hình tính toán, 10.000 khách hàng được chia giữa các nhà hàng, rồi xuất hiện báo cáo tháng — doanh thu, chi phí, lợi nhuận, tiền trong két và thị phần',
   159: 'Bốn ứng dụng của trò chơi Market Game: đào tạo, đánh giá năng lực, chẩn đoán và luyện tập',
+  160: 'Tôi có thể xem một ván trước không?',
+  161: 'Có, và hoàn toàn miễn phí. Gửi đăng ký và chọn “Xem một ván — miễn phí”: chúng tôi sẽ báo ván gần nhất và gửi đường link hoặc địa chỉ. Bạn sẽ thấy thị trường phản ứng với các quyết định ra sao và buổi phân tích diễn ra thế nào — rồi mới quyết định có chơi hay không.',
+  162: '<b>Xem thì miễn phí.</b> Chưa sẵn sàng chơi? Hãy đến với tư cách khán giả: gửi đăng ký và chọn “Xem một ván — miễn phí”.',
+  163: 'Xem một ván miễn phí',
 }

@@ -106,6 +106,14 @@
         },
         {
           "@type": "Question",
+          "name": "Tôi có thể xem một ván trước không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có, và hoàn toàn miễn phí. Gửi đăng ký và chọn “Xem một ván — miễn phí”: chúng tôi sẽ báo ván gần nhất và gửi đường link hoặc địa chỉ. Bạn sẽ thấy thị trường phản ứng với các quyết định ra sao và buổi phân tích diễn ra thế nào — rồi mới quyết định có chơi hay không."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Các hạng đấu khác nhau ở điểm nào?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -434,6 +442,10 @@
 
     </div>
     <p class="leaguenote"><b>Giá tính cho cả đội.</b> Đội có bao nhiêu người cũng được: đến một mình, đi hai người, hay mang cả phòng ban. Mỗi ván chơi có từ bốn đến hai mươi đội — bàn càng đông, thị trường càng chật và kết quả càng sòng phẳng.</p>
+    <div class="leaguewatch">
+      <p><b>Xem thì miễn phí.</b> Chưa sẵn sàng chơi? Hãy đến với tư cách khán giả: gửi đăng ký và chọn “Xem một ván — miễn phí”.</p>
+      <button type="button" class="btn btn--line" data-lead="watch">Xem một ván miễn phí</button>
+    </div>
   </div>
 </section>
 
@@ -463,6 +475,10 @@
       <details>
         <summary>Chi phí tham gia là bao nhiêu?</summary>
         <p class="faq__a">Ba hạng đấu: 650.000 ₫ mỗi đội nếu bạn chưa có kinh doanh; 2.600.000 ₫ nếu việc kinh doanh đã chạy — tối đa mười nhân viên và doanh thu tới một triệu đô la mỗi năm; 78.000.000 ₫ cho buổi chiến lược dành cho doanh nghiệp vừa và lớn. Giá luôn tính cho cả đội, và đội có bao nhiêu người cũng được.</p>
+      </details>
+      <details>
+        <summary>Tôi có thể xem một ván trước không?</summary>
+        <p class="faq__a">Có, và hoàn toàn miễn phí. Gửi đăng ký và chọn “Xem một ván — miễn phí”: chúng tôi sẽ báo ván gần nhất và gửi đường link hoặc địa chỉ. Bạn sẽ thấy thị trường phản ứng với các quyết định ra sao và buổi phân tích diễn ra thế nào — rồi mới quyết định có chơi hay không.</p>
       </details>
       <details>
         <summary>Các hạng đấu khác nhau ở điểm nào?</summary>
@@ -559,13 +575,15 @@ window.FORM_CONFIG = {
     "": "Chưa quyết định",
     "l12": "Hạng 12 · Khởi đầu — 650.000 ₫",
     "l24": "Hạng 24 · Tăng trưởng — 2.600.000 ₫",
-    "l36": "Hạng 36 · Tinh hoa — 78.000.000 ₫"
+    "l36": "Hạng 36 · Tinh hoa — 78.000.000 ₫",
+    "watch": "Xem một ván — miễn phí"
   },
   "managerLeagues": {
     "": "Пока не выбрал",
     "l12": "Лига 12 · Старт — 650.000 ₫",
     "l24": "Лига 24 · Рост — 2.600.000 ₫",
-    "l36": "Лига 36 · Элита — 78.000.000 ₫"
+    "l36": "Лига 36 · Элита — 78.000.000 ₫",
+    "watch": "Зритель — бесплатно"
   },
   "text": {
     "title": "Đăng ký tham gia",
@@ -731,6 +749,7 @@ window.SCHEDULE_CONFIG = {
     }
   ],
   "text": {
+    "watch": "Xem miễn phí",
     "duration": "{h} giờ",
     "yourTime": "giờ của bạn",
     "soonest": "gần nhất",

@@ -360,6 +360,10 @@
             '<button type="button" class="btn" data-lead="' + esc(g.league) + '" ' +
               'data-game="' + esc(managerLabel(g)) + '">' +
               esc(T.cta) + '</button>' +
+            // бесплатно посмотреть эту же игру: в заявку уходит «Зритель» и сама игра
+            (T.watch
+              ? '<button type="button" class="game__watch" data-lead="watch" ' +
+                  'data-game="' + esc(managerLabel(g)) + '">' + esc(T.watch) + '</button>' : '') +
           '</div>' +
         '</article>';
     }).join('');

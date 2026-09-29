@@ -106,6 +106,14 @@
         },
         {
           "@type": "Question",
+          "name": "Posso só assistir a um jogo primeiro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, e é grátis. Envie um pedido e escolha “Assistir a um jogo — grátis”: diremos qual é o próximo jogo e mandaremos o link ou o endereço. Você vê como o mercado reage às decisões e como é a análise final — e depois decide se quer jogar."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Qual é a diferença entre as ligas?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -434,6 +442,10 @@
 
     </div>
     <p class="leaguenote"><b>O preço é pela equipe inteira.</b> A equipe pode ter qualquer tamanho: venha sozinho, em dupla ou com um departamento inteiro. Um jogo reúne de quatro a vinte equipes — quanto mais gente à mesa, mais disputado o mercado e mais honesto o resultado.</p>
+    <div class="leaguewatch">
+      <p><b>Assistir é grátis.</b> Ainda não está pronto para jogar? Venha como espectador: envie um pedido e escolha “Assistir a um jogo — grátis”.</p>
+      <button type="button" class="btn btn--line" data-lead="watch">Assistir a um jogo grátis</button>
+    </div>
   </div>
 </section>
 
@@ -463,6 +475,10 @@
       <details>
         <summary>Quanto custa?</summary>
         <p class="faq__a">Três ligas: US$ 25 por equipe se você ainda não tem negócio; US$ 100 se o seu negócio já funciona — até dez funcionários e faturamento de até um milhão de dólares por ano; US$ 3.000 por uma sessão de estratégia para médias e grandes empresas. O preço sempre cobre a equipe inteira, e a equipe pode ter qualquer tamanho.</p>
+      </details>
+      <details>
+        <summary>Posso só assistir a um jogo primeiro?</summary>
+        <p class="faq__a">Sim, e é grátis. Envie um pedido e escolha “Assistir a um jogo — grátis”: diremos qual é o próximo jogo e mandaremos o link ou o endereço. Você vê como o mercado reage às decisões e como é a análise final — e depois decide se quer jogar.</p>
       </details>
       <details>
         <summary>Qual é a diferença entre as ligas?</summary>
@@ -559,13 +575,15 @@ window.FORM_CONFIG = {
     "": "Ainda não sei",
     "l12": "Liga 12 · Início — US$ 25",
     "l24": "Liga 24 · Crescimento — US$ 100",
-    "l36": "Liga 36 · Elite — US$ 3.000"
+    "l36": "Liga 36 · Elite — US$ 3.000",
+    "watch": "Assistir a um jogo — grátis"
   },
   "managerLeagues": {
     "": "Пока не выбрал",
     "l12": "Лига 12 · Старт — US$ 25",
     "l24": "Лига 24 · Рост — US$ 100",
-    "l36": "Лига 36 · Элита — US$ 3.000"
+    "l36": "Лига 36 · Элита — US$ 3.000",
+    "watch": "Зритель — бесплатно"
   },
   "text": {
     "title": "Inscrição no jogo",
@@ -731,6 +749,7 @@ window.SCHEDULE_CONFIG = {
     }
   ],
   "text": {
+    "watch": "Assistir grátis",
     "duration": "{h} h",
     "yourTime": "no seu horário",
     "soonest": "o próximo",

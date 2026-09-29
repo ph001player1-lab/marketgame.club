@@ -106,6 +106,14 @@
         },
         {
           "@type": "Question",
+          "name": "Can I just watch a game first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and it is free. Send a request and choose “Watch a game — free”: we will name the nearest game and send you a link or an address. You will see how the market reacts to decisions and how the debrief goes — and then decide whether to play."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What is the difference between the leagues?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -434,6 +442,10 @@
 
     </div>
     <p class="leaguenote"><b>The price is for the whole team.</b> A team can be any size: come alone, come as a pair, or bring a department. A single game seats four to twenty teams — the fuller the table, the tighter the market and the more honest the result.</p>
+    <div class="leaguewatch">
+      <p><b>Watching is free.</b> Not ready to play yet? Come as a spectator: send a request and choose “Watch a game — free”.</p>
+      <button type="button" class="btn btn--line" data-lead="watch">Watch a game for free</button>
+    </div>
   </div>
 </section>
 
@@ -463,6 +475,10 @@
       <details>
         <summary>How much does it cost?</summary>
         <p class="faq__a">Three leagues: $25 per team if you have no business yet; $100 if your business already runs — up to ten employees and up to a million dollars a year; $3000 for a strategy session for medium and large companies. The price always covers the whole team, and a team can be any size.</p>
+      </details>
+      <details>
+        <summary>Can I just watch a game first?</summary>
+        <p class="faq__a">Yes, and it is free. Send a request and choose “Watch a game — free”: we will name the nearest game and send you a link or an address. You will see how the market reacts to decisions and how the debrief goes — and then decide whether to play.</p>
       </details>
       <details>
         <summary>What is the difference between the leagues?</summary>
@@ -559,13 +575,15 @@ window.FORM_CONFIG = {
     "": "Not sure yet",
     "l12": "League 12 · Start — $25",
     "l24": "League 24 · Growth — $100",
-    "l36": "League 36 · Elite — $3000"
+    "l36": "League 36 · Elite — $3000",
+    "watch": "Watch a game — free"
   },
   "managerLeagues": {
     "": "Пока не выбрал",
     "l12": "Лига 12 · Старт — $25",
     "l24": "Лига 24 · Рост — $100",
-    "l36": "Лига 36 · Элита — $3000"
+    "l36": "Лига 36 · Элита — $3000",
+    "watch": "Зритель — бесплатно"
   },
   "text": {
     "title": "Join a game",
@@ -731,6 +749,7 @@ window.SCHEDULE_CONFIG = {
     }
   ],
   "text": {
+    "watch": "Watch free",
     "duration": "{h} h",
     "yourTime": "your local time",
     "soonest": "next up",

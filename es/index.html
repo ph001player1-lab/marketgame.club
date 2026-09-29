@@ -106,6 +106,14 @@
         },
         {
           "@type": "Question",
+          "name": "¿Puedo solo ver una partida primero?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, y es gratis. Envía una solicitud y elige “Ver una partida — gratis”: te diremos cuál es la próxima partida y te enviaremos el enlace o la dirección. Verás cómo reacciona el mercado a las decisiones y cómo es el análisis final, y luego decides si quieres jugar."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "¿En qué se diferencian las ligas?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -434,6 +442,10 @@
 
     </div>
     <p class="leaguenote"><b>El precio es por todo el equipo.</b> El equipo puede ser de cualquier tamaño: ven solo, en pareja o con todo un departamento. En una partida se juntan de cuatro a veinte equipos: cuanta más gente en la mesa, más disputado el mercado y más honesto el resultado.</p>
+    <div class="leaguewatch">
+      <p><b>Mirar es gratis.</b> ¿Todavía no estás listo para jugar? Ven como espectador: envía una solicitud y elige “Ver una partida — gratis”.</p>
+      <button type="button" class="btn btn--line" data-lead="watch">Ver una partida gratis</button>
+    </div>
   </div>
 </section>
 
@@ -463,6 +475,10 @@
       <details>
         <summary>¿Cuánto cuesta?</summary>
         <p class="faq__a">Tres ligas: US$ 25 por equipo si todavía no tienes negocio; US$ 100 si tu negocio ya funciona, con hasta diez empleados y hasta un millón de dólares al año; US$ 3.000 por una sesión de estrategia para medianas y grandes empresas. El precio siempre cubre a todo el equipo, y el equipo puede ser de cualquier tamaño.</p>
+      </details>
+      <details>
+        <summary>¿Puedo solo ver una partida primero?</summary>
+        <p class="faq__a">Sí, y es gratis. Envía una solicitud y elige “Ver una partida — gratis”: te diremos cuál es la próxima partida y te enviaremos el enlace o la dirección. Verás cómo reacciona el mercado a las decisiones y cómo es el análisis final, y luego decides si quieres jugar.</p>
       </details>
       <details>
         <summary>¿En qué se diferencian las ligas?</summary>
@@ -559,13 +575,15 @@ window.FORM_CONFIG = {
     "": "Todavía no lo sé",
     "l12": "Liga 12 · Inicio — US$ 25",
     "l24": "Liga 24 · Crecimiento — US$ 100",
-    "l36": "Liga 36 · Élite — US$ 3.000"
+    "l36": "Liga 36 · Élite — US$ 3.000",
+    "watch": "Ver una partida — gratis"
   },
   "managerLeagues": {
     "": "Пока не выбрал",
     "l12": "Лига 12 · Старт — US$ 25",
     "l24": "Лига 24 · Рост — US$ 100",
-    "l36": "Лига 36 · Элита — US$ 3.000"
+    "l36": "Лига 36 · Элита — US$ 3.000",
+    "watch": "Зритель — бесплатно"
   },
   "text": {
     "title": "Inscripción a una partida",
@@ -731,6 +749,7 @@ window.SCHEDULE_CONFIG = {
     }
   ],
   "text": {
+    "watch": "Ver gratis",
     "duration": "{h} h",
     "yourTime": "en tu hora",
     "soonest": "la próxima",
