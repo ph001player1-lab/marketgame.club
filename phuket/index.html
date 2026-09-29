@@ -9,7 +9,12 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://marketgame.club/phuket/">
 
-
+<link rel="alternate" hreflang="en" href="https://marketgame.club/phuket/">
+<link rel="alternate" hreflang="ru" href="https://marketgame.club/phuket/ru/">
+<link rel="alternate" hreflang="vi" href="https://marketgame.club/phuket/vi/">
+<link rel="alternate" hreflang="pt" href="https://marketgame.club/phuket/pt/">
+<link rel="alternate" hreflang="es" href="https://marketgame.club/phuket/es/">
+<link rel="alternate" hreflang="x-default" href="https://marketgame.club/phuket/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Phuket Business League">
@@ -20,6 +25,7 @@
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="phuket.css">
+<script src="../lang.js" data-root data-langs="ru vi pt es"></script>
 
 <script type="application/ld+json">
 {
@@ -35,17 +41,16 @@
         "@type": "Place",
         "name": "Phuket, Thailand"
       },
-      "founder": {
-        "@type": "Person",
-        "name": "Nikolay Bulenkov"
-      },
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
         "telephone": "+66823204796",
         "availableLanguage": [
           "English",
-          "Russian"
+          "Russian",
+          "Vietnamese",
+          "Portuguese",
+          "Spanish"
         ]
       },
       "sameAs": [
@@ -131,6 +136,10 @@
   <div class="bar">
     <div class="logo">Phuket<br><em>Business League</em></div>
     <div class="bar__right">
+      <details class="langpick">
+        <summary aria-label="English">EN</summary>
+        <ul><li><a href="./" hreflang="en" lang="en" data-pick="en" aria-current="page">English <small>EN</small></a></li><li><a href="ru/" hreflang="ru" lang="ru" data-pick="ru">Русский <small>RU</small></a></li><li><a href="vi/" hreflang="vi" lang="vi" data-pick="vi">Tiếng Việt <small>VI</small></a></li><li><a href="pt/" hreflang="pt" lang="pt" data-pick="pt">Português <small>PT</small></a></li><li><a href="es/" hreflang="es" lang="es" data-pick="es">Español <small>ES</small></a></li></ul>
+      </details>
       <a class="bar__tg" href="#calendar" data-lead="pk_join">Join</a>
     </div>
   </div>
@@ -252,22 +261,13 @@
   </div>
 </section>
 
-<!-- КТО ВЕДЁТ -->
+<!-- КОНТАКТЫ -->
 <section class="sect">
   <div class="wrap">
-    <span class="eyebrow">WHO RUNS IT</span>
-    <div class="author">
-      <div>
-        <img class="author__photo" src="../author.jpg" width="560" height="700" alt="Nikolay Bulenkov, organizer of Phuket Business League" loading="lazy">
-      </div>
-      <div>
-        <h2 style="margin-bottom:.3em">Nikolay Bulenkov</h2>
-        <p class="lede">More than 20 years in sales, management and business development. Has been creating and running business simulations since 2014. Lives on Phuket.</p>
-        <p>Author of the business game “Market Game” and of corporate training programmes.</p>
-        <p style="margin:26px 0 0;font-weight:700">Talk to the organizers directly:</p>
-        <div class="contacts"><a class="btn" href="https://wa.me/66823204796?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20Phuket%20Business%20League." target="_blank" rel="noopener">WhatsApp <small>+66 82 320 4796</small></a><a class="btn btn--line" href="https://t.me/Nickbv" target="_blank" rel="noopener">Telegram <small>@Nickbv</small></a><a class="btn btn--line" href="https://line.me/ti/p/~62803839" target="_blank" rel="noopener">LINE <small>ID 62803839</small></a></div>
-      </div>
-    </div>
+    <span class="eyebrow">CONTACT</span>
+    <h2>Talk to us directly</h2>
+    <p class="lede">Questions about meetings, a closed game for your team or a partnership — write in whichever messenger suits you. We usually reply within a day.</p>
+    <div class="contacts"><a class="btn" href="https://wa.me/66823204796?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20Phuket%20Business%20League." target="_blank" rel="noopener">WhatsApp <small>+66 82 320 4796</small></a><a class="btn btn--line" href="https://t.me/Nickbv" target="_blank" rel="noopener">Telegram <small>@Nickbv</small></a><a class="btn btn--line" href="https://line.me/ti/p/~62803839" target="_blank" rel="noopener">LINE <small>ID 62803839</small></a></div>
   </div>
 </section>
 
@@ -307,7 +307,7 @@
 
 <footer class="wrap">
   <div class="foot">
-    <span>Phuket Business League · a community by Nikolay Bulenkov, author of “Market Game”</span>
+    <span>Phuket Business League · a community of entrepreneurs on Phuket</span>
     <span>Contact: <a href="https://wa.me/66823204796?text=Hi%21%20I%27d%20like%20to%20know%20more%20about%20Phuket%20Business%20League." target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/Nickbv" target="_blank" rel="noopener">Telegram</a> · <a href="https://line.me/ti/p/~62803839" target="_blank" rel="noopener">LINE</a></span>
     <span><a href="../">The game: marketgame.club</a> · <a href="../privacy.html">Privacy policy</a></span>
   </div>
@@ -315,6 +315,7 @@
 
 <script>
 window.MEETUPS_CONFIG = {
+  "lang": "en",
   "locale": "en-GB",
   "hosts": [
     {
@@ -427,10 +428,9 @@ window.MEETUPS_CONFIG = {
     }
   }
 };
-// Отменённые встречи и разовые встречи — см. README, раздел «Пхукет».
-window.MEETUPS_CONFIG.exceptions = [];
-window.MEETUPS_CONFIG.extra = [];
 </script>
+<!-- отмены и разовые встречи — в meetups-exceptions.js, одни на все языки -->
+<script src="meetups-exceptions.js"></script>
 <script src="meetups.js"></script>
 <script>
 window.FORM_CONFIG = {

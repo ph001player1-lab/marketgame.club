@@ -86,6 +86,19 @@ button{font-family:inherit}
 .bar__tg{font-size:14.5px;font-weight:700;letter-spacing:.005em;text-decoration:none;color:var(--ink);white-space:nowrap;border-bottom:2px solid var(--red);padding-bottom:2px}
 
 /* переключатель языков */
+/* выбор языка: выпадающее меню в шапке. На <details> — работает и без JS */
+.langpick{position:relative}
+.langpick summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;padding:6px 10px 6px 12px;border:2px solid var(--ink);border-radius:3px;font-size:13px;font-weight:800;letter-spacing:.06em;line-height:1.3;user-select:none}
+.langpick summary::-webkit-details-marker{display:none}
+.langpick summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin:-4px 2px 0 2px;transition:transform .15s}
+.langpick[open] summary::after{transform:rotate(-135deg);margin-top:3px}
+.langpick summary:hover{background:var(--ink);color:var(--paper)}
+.langpick ul{position:absolute;right:0;top:calc(100% + 6px);z-index:50;list-style:none;margin:0;padding:6px 0;min-width:170px;background:var(--paper);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.langpick a{display:flex;justify-content:space-between;gap:14px;padding:8px 14px;font-size:15px;font-weight:600;color:var(--ink);text-decoration:none}
+.langpick a small{font-size:11.5px;font-weight:800;letter-spacing:.08em;color:var(--mute)}
+.langpick a:hover{background:var(--paper-2)}
+.langpick a[aria-current]{color:var(--red)}
+@media (max-width:520px){.bar{flex-wrap:nowrap}.bar__right{flex-wrap:nowrap;gap:12px;flex-shrink:0}}
 .lang{display:flex;align-items:stretch;border:2px solid var(--ink);border-radius:3px;overflow:hidden}
 .lang a,.lang span{display:block;padding:6px 11px;font-size:13px;font-weight:800;letter-spacing:.06em;line-height:1.3;text-decoration:none;border:0;border-left:2px solid var(--ink)}
 .lang :first-child{border-left:0}
@@ -152,22 +165,6 @@ button{font-family:inherit}
 .seen li{padding:14px 0 14px 26px;border-bottom:1px solid var(--line-2);position:relative;font-size:16px}
 .seen li::before{content:"";position:absolute;left:0;top:23px;width:13px;height:2px;background:var(--red)}
 
-/* автор */
-.author{display:grid;gap:clamp(26px,4vw,48px);align-items:start}
-@media(min-width:860px){.author{grid-template-columns:300px minmax(0,1fr)}}
-.author__photo{border:2px solid var(--ink);background:var(--paper-2)}
-.regs{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--line-2)}
-.regs li{display:grid;gap:6px;padding:20px 0;border-bottom:1px solid var(--line-2);font-size:16px}
-@media(min-width:600px){.regs li{grid-template-columns:110px 1fr;gap:24px;align-items:start}}
-.regs b{font-weight:700;font-size:14px;color:var(--red);letter-spacing:.02em;line-height:1.7}
-.regs li>div>p{margin:0}
-.cert{display:block;max-width:340px;margin-top:16px;border:2px solid var(--ink);background:#fff;line-height:0;transition:transform .15s,box-shadow .15s}
-.cert:hover{transform:translateY(-2px);box-shadow:6px 6px 0 var(--ink)}
-.cert img{width:100%}
-.viscap{display:block;font-size:13.5px;color:var(--mute);margin-top:9px;line-height:1.5}
-.orglogo{margin-top:18px;width:auto}
-.orglogo--like{height:44px}
-.orglogo--mail{height:30px}
 .offer{margin-top:clamp(26px,3.5vw,38px);border:2px solid var(--ink);padding:clamp(22px,3vw,30px);background:var(--paper)}
 .offer h3{font-size:20px}
 .offer p{font-size:16px;color:var(--mute)}

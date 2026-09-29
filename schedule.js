@@ -124,7 +124,8 @@
   }
 
   function upcoming(now) {
-    var skip = C.exceptions || [];
+    // отмены — общие для всех языков, в schedule-exceptions.js
+    var skip = (C.exceptions || []).concat(window.SCHEDULE_EXCEPTIONS || []);
     var out = [];
 
     RULES.forEach(function (rule) {
@@ -293,6 +294,19 @@
       }).join('') + '</div>';
   }
 
+  // Подпись игры для заявки. Посетитель видит страницу на своём языке, а
+  // менеджеры читают таблицу по-русски — поэтому в заявку уходит подпись из
+  // C.manager, с датой и временем по поясу самой игры.
+  function managerLabel(g) {
+    var M = C.manager;
+    if (!M) return dayFmt.format(g.at) + ' · ' + C.leagues[g.league] + ' · ' + C.streams[g.stream];
+    var when = new Intl.DateTimeFormat(M.locale, {
+      timeZone: g.tz, weekday: 'short', day: 'numeric', month: 'short',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+    }).format(g.at);
+    return when + ' · ' + (M.leagues[g.league] || g.league) + ' · ' + (M.streams[g.stream] || g.stream);
+  }
+
   function render() {
     var now = new Date();
     var games = upcoming(now);
@@ -344,7 +358,7 @@
           '</div>' +
           '<div class="game__go">' +
             '<button type="button" class="btn" data-lead="' + esc(g.league) + '" ' +
-              'data-game="' + esc(dayFmt.format(g.at) + ' · ' + label) + '">' +
+              'data-game="' + esc(managerLabel(g)) + '">' +
               esc(T.cta) + '</button>' +
           '</div>' +
         '</article>';

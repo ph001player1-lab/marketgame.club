@@ -98,10 +98,15 @@
       одной длины и в одном порядке, поэтому номер общий. */
   function topicIndex(y, m) { return y * 12 + m; }
 
+  function topicText(t, lang) {
+    if (!t || typeof t === 'string') return t || '';
+    return t[lang] || t.en || '';
+  }
+
   function pick(list, i) { return list && list.length ? list[i % list.length] : ''; }
 
   function cancelled(day, id) {
-    var skip = C.exceptions || [];
+    var skip = (C.exceptions || []).concat(window.MEETUPS_EXCEPTIONS || []);
     return skip.indexOf(day) !== -1 || skip.indexOf(day + ' ' + id) !== -1;
   }
 
@@ -134,14 +139,15 @@
     }
 
     // Разовые встречи, которые организатор добавил вручную
-    (C.extra || []).forEach(function (e) {
+    (C.extra || []).concat(window.MEETUPS_EXTRA || []).forEach(function (e) {
       var p = e.date.split('-'), hm = e.time.split(':');
       var at = instant(+p[0], +p[1] - 1, +p[2], +hm[0], +hm[1]);
       if (at <= now || at - now > HORIZON_DAYS * 86400000) return;
       out.push({
         at: at, ends: new Date(at.getTime() + (e.hours || 2) * 3600000),
         id: 'extra', format: e.format, league: e.league || '', hours: e.hours || 2,
-        topic: e.topic || '', managerTopic: e.topic || ''
+        // тема — строка или {en: …, ru: …}: берём язык страницы, иначе английский
+        topic: topicText(e.topic, C.lang), managerTopic: topicText(e.topic, 'ru')
       });
     });
 

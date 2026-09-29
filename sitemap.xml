@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://marketgame.club/</loc></url>
-  <url><loc>https://marketgame.club/phuket/</loc></url>
-  <url><loc>https://marketgame.club/privacy.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://marketgame.club/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/phuket/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/phuket/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/phuket/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/phuket/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/phuket/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/phuket/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/phuket/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/phuket/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/phuket/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/phuket/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/phuket/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/phuket/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/phuket/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/phuket/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/phuket/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/phuket/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/phuket/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/phuket/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/phuket/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/phuket/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/phuket/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/phuket/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/phuket/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/phuket/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/phuket/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/phuket/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/phuket/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/phuket/"/>
+  </url>
+  <url>
+    <loc>https://marketgame.club/phuket/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marketgame.club/phuket/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://marketgame.club/phuket/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://marketgame.club/phuket/vi/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://marketgame.club/phuket/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://marketgame.club/phuket/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marketgame.club/phuket/"/>
+  </url>
 </urlset>

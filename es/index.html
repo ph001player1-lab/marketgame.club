@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pon a prueba tu estrategia en un mercado real — Market Game</title>
+<meta name="description" content="Vas a abrir un negocio o ya tienes uno: pon a prueba tu estrategia en un juego antes de invertir dinero. Un mercado, competidores reales, un año de juego en una sola sesión. Tres ligas desde US$ 25 por equipo.">
+<meta name="theme-color" content="#F2F1EC">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://marketgame.club/es/">
+<link rel="alternate" hreflang="en" href="https://marketgame.club/">
+<link rel="alternate" hreflang="ru" href="https://marketgame.club/ru/">
+<link rel="alternate" hreflang="vi" href="https://marketgame.club/vi/">
+<link rel="alternate" hreflang="pt" href="https://marketgame.club/pt/">
+<link rel="alternate" hreflang="es" href="https://marketgame.club/es/">
+<link rel="alternate" hreflang="x-default" href="https://marketgame.club/">
+<script src="../lang.js"></script>
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_LA">
+<meta property="og:title" content="Pon a prueba tu estrategia en un mercado real">
+<meta property="og:description" content="Un año de negocio en una sola partida: un mercado común, competidores reales y el dinero en caja como único juez. Desde US$ 25 por equipo.">
+<meta property="og:image" content="https://marketgame.club/og-es.jpg">
+<meta property="og:url" content="https://marketgame.club/es/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="../styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://marketgame.club/#org",
+      "name": "Market Game",
+      "url": "https://marketgame.club/",
+      "logo": "https://marketgame.club/og-es.jpg"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://marketgame.club/es/#game",
+      "name": "Market Game — simulación empresarial en equipo",
+      "description": "Un juego de negocios en equipo: de 4 a 20 equipos compiten por un mismo mercado durante 12, 24 o 36 turnos en una sola sesión. Un modelo reparte 10.000 clientes según precio, calidad, publicidad y capacidad. Gana quien termina con más dinero en caja.",
+      "brand": {
+        "@id": "https://marketgame.club/#org"
+      },
+      "image": "https://marketgame.club/og-es.jpg",
+      "inLanguage": "es",
+      "category": "Simulación empresarial, formación en emprendimiento",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Futuros y actuales emprendedores, gerentes, RR. HH. y capacitación"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Liga 12 · Inicio",
+          "description": "12 turnos en una sola sesión, para quienes todavía no tienen un negocio. Precio por equipo de cualquier tamaño.",
+          "price": "25",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://marketgame.club/es/#leagues"
+        },
+        {
+          "@type": "Offer",
+          "name": "Liga 24 · Crecimiento",
+          "description": "24 turnos en una sola sesión, para dueños de un negocio en marcha con hasta 10 empleados y facturación anual de hasta 1.000.000 USD. Precio por equipo de cualquier tamaño.",
+          "price": "100",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://marketgame.club/es/#leagues"
+        },
+        {
+          "@type": "Offer",
+          "name": "Liga 36 · Élite",
+          "description": "36 turnos en una sola sesión, una sesión de estrategia para medianas y grandes empresas. Precio por equipo de cualquier tamaño.",
+          "price": "3000",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://marketgame.club/es/#leagues"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://marketgame.club/es/#faq",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quiero abrir un negocio, pero no tengo experiencia. ¿Por dónde empiezo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por un error barato. En una sola noche el juego te hace recorrer lo que en la vida lleva un año: fijas un precio, metes dinero en publicidad y te topas con un hueco de caja. Aquí el error cuesta puntos, no ahorros. Así, cuando lo mismo le pase a tu dinero, ya lo habrás vivido y sabrás cómo termina."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tres ligas: US$ 25 por equipo si todavía no tienes negocio; US$ 100 si tu negocio ya funciona, con hasta diez empleados y hasta un millón de dólares al año; US$ 3.000 por una sesión de estrategia para medianas y grandes empresas. El precio siempre cubre a todo el equipo, y el equipo puede ser de cualquier tamaño."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué se diferencian las ligas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo en dos cosas: la duración del juego y quién más está en la mesa. La Liga 12 son doce turnos entre otros principiantes. La Liga 24 son veinticuatro turnos entre emprendedores en actividad. La Liga 36 son treinta y seis turnos entre dueños de medianas y grandes empresas. El modelo de mercado es el mismo en todas las ligas: no lo ajustamos a tu sector."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "12, 24, 36 meses: ¿cuánto de mi tiempo es eso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Son meses del juego, no del calendario: no esperas un año, y mucho menos tres. Toda la partida se juega en una sola sesión, y un mes del juego es un turno de tres a cinco minutos. Lo que cambia entre las ligas es cuántos turnos juegas y hasta dónde se ven las consecuencias de tus decisiones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Para qué jugar, si puedo pedirle una estrategia a una IA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una IA te dará una estrategia competente y estándar, justo lo que nunca ocurre en un mercado real. Allí te enfrentas a personas: se empecinan, blufean, bajan precios por despecho y hacen jugadas que ningún cálculo contemplaría. El juego te da lo que ningún consultor puede: cómo se comportan de verdad los competidores, y no una fórmula de libro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es en línea o tengo que ir a algún lugar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las dos opciones. La mecánica es la misma: tú decides, el modelo calcula y todos ven el resultado. La modalidad presencial suma negociaciones en vivo con la mesa de al lado; la modalidad en línea permite armar un equipo con gente de distintas ciudades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tengo que prepararme o aprender las reglas antes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. No hay instrucciones antes del juego, y es a propósito. La mecánica se entiende en los primeros meses, igual que en los negocios, donde nadie te da un manual antes del día de apertura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué se diferencia de un curso de negocios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En un curso te explican unit economics. Aquí tú mismo fijas el precio, pierdes clientes y lees el informe que muestra que la publicidad no se pagó. Nadie pone notas: solo cuenta el mercado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Estoy solo, sin equipo. ¿Puedo jugar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Un equipo de una persona también es un equipo, y el precio es el mismo. Jugarás contra los demás participantes, no contra el anfitrión."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="bar">
+    <div class="logo">Market<br><em>Game</em></div>
+    <div class="bar__right">
+      <details class="langpick">
+        <summary aria-label="Español">ES</summary>
+        <ul><li><a href="../" hreflang="en" lang="en" data-pick="en">English <small>EN</small></a></li><li><a href="../ru/" hreflang="ru" lang="ru" data-pick="ru">Русский <small>RU</small></a></li><li><a href="../vi/" hreflang="vi" lang="vi" data-pick="vi">Tiếng Việt <small>VI</small></a></li><li><a href="../pt/" hreflang="pt" lang="pt" data-pick="pt">Português <small>PT</small></a></li><li><a href="../es/" hreflang="es" lang="es" data-pick="es" aria-current="page">Español <small>ES</small></a></li></ul>
+      </details>
+      <a class="bar__tg" href="#leagues" data-lead="">Enviar solicitud</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="wrap hero">
+  <div class="hero__in">
+    <div>
+      <span class="eyebrow">MARKET GAME · JUEGO DE NEGOCIOS EN EQUIPO</span>
+      <h1>Pon a prueba tu estrategia<span>en un mercado real</span></h1>
+      <p class="lede">Vas a abrir un negocio o ya tienes uno: dos horas en la mesa de juego te muestran lo que en la vida lleva meses de escuela de negocios y años de trabajo.</p>
+      <div class="btns">
+        <button type="button" class="btn" data-lead="">Enviar solicitud</button>
+        <a class="btn btn--line" href="#calendar">Próximas partidas</a>
+      </div>
+    </div>
+    <div class="hero__pic">
+      <img src="../hero-en.jpg" width="1150" height="767" alt="Esquema del juego: el flujo de clientes de un centro comercial se reparte entre restaurantes competidores del patio de comidas" fetchpriority="high">
+    </div>
+  </div>
+
+</section>
+
+<!-- WHAT IT IS -->
+<section class="sect sect--tint">
+  <div class="wrap">
+    <div class="split">
+    <div>
+      <span class="eyebrow">QUÉ ES</span>
+      <h2>Cómo funciona el juego de negocios</h2>
+    </div>
+    <div class="prose">
+      <p>Varias empresas juegan en un mismo mercado. Los clientes son los mismos para todos, y cada jugador tiene que atraerlos hacia sí. Cada turno es un mes del juego: fijas el precio, inviertes en calidad, eliges los canales de publicidad, agregas mesas, contratas personal, pides préstamos. Que el cliente entre a tu restaurante o se vaya con la competencia depende de lo que decidas. Igual que en un mercado real, y quién atrajo a quién lo calcula el modelo, no el anfitrión.</p>
+      <p>Cada mes hay un informe financiero. Ves el resultado de tus jugadas y, sobre todo, de las de tus competidores: ingresos, costos, ganancia, el precio del mercado, el dinero en caja y la participación de mercado. Después vienen el análisis, una nueva estrategia y el mes siguiente.</p>
+      <p>Gana quien termina con más dinero en caja.</p>
+    </div>
+    </div>
+    <figure class="figure"><img src="../one-market-en.jpg" width="1150" height="647" alt="Un mercado para todos: un flujo de 10.000 clientes pasa por el modelo de mercado y se reparte entre restaurantes competidores. Un turno equivale a un mes; un año de juego tiene doce meses" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- MARKET MODEL -->
+<section class="sect sect--dark" id="model">
+  <div class="wrap">
+    <span class="eyebrow">EL MODELO DE MERCADO</span>
+    <h2>Mira cómo funciona</h2>
+    <div class="prose" style="max-width:76ch">
+      <p>Aquí está todo el juego en una sola pantalla. Imagina que el restaurante rojo eres tú. Bajas el precio y el flujo viene hacia ti, pero cada cuenta es más pequeña. Subes la calidad y la gente vuelve, así que puedes sostener un precio más alto. Metes dinero en publicidad y te conocen más, pero el dinero sale de la caja ahora mismo.</p>
+      <p>Mueve las palancas —precio, calidad, publicidad, salón— y mira al instante cómo se mueven los clientes entre los cinco restaurantes y qué te queda al final: ingresos, ganancia, participación de mercado. Nadie pone notas. Solo cuenta el mercado. En una partida real es igual, solo que son doce meses seguidos y en la mesa de al lado hay jugadores como tú. Aquí las cifras están simplificadas, pero la lógica es exactamente la misma.</p>
+    </div>
+
+    <p class="simcta"><b>Pruébalo ahora mismo.</b> Abajo hay una calculadora de demostración con el mismo modelo: mueve las palancas y mira qué pasa. Los cinco restaurantes empiezan con los mismos US$ 50.000 en caja; a partir de ahí, solo las decisiones marcan la diferencia.</p>
+
+    <div class="sim">
+      <div class="sim__panel">
+        <h3 class="sim__t">Tu restaurante · P1</h3>
+        <p class="sim__sub">El rojo del gráfico eres tú</p>
+
+        <div class="sim__row">
+          <label for="simPrice">Cuenta promedio</label><output id="outPrice">USD 9.50</output>
+          <input type="range" id="simPrice" min="6.25" max="15" step="0.25" value="9.5" aria-describedby="outPrice">
+        </div>
+        <div class="sim__row">
+          <label for="simQual">Calidad</label><output id="outQual">6 / 10</output>
+          <input type="range" id="simQual" min="1" max="10" step="1" value="6" aria-describedby="outQual">
+        </div>
+        <div class="sim__row">
+          <label for="simAd">Presupuesto de publicidad</label><output id="outAd">USD 3,750</output>
+          <input type="range" id="simAd" min="0" max="10000" step="250" value="3750" aria-describedby="outAd">
+        </div>
+        <div class="sim__row">
+          <label for="simTables">Mesas (capacidad)</label><output id="outTables">120</output>
+          <input type="range" id="simTables" min="60" max="220" step="5" value="120" aria-describedby="outTables">
+        </div>
+
+        <div class="sim__btns">
+          <button type="button" class="btn" id="simNext">Mes siguiente →</button>
+          <button type="button" class="btn btn--line" id="simReset">Reiniciar</button>
+        </div>
+
+        <p class="sim__cashlab" id="simCashLab">Dinero en caja · mes 1 de 12</p>
+        <p class="sim__cash" id="simCash">USD 50,000</p>
+        <p class="sim__verdict" id="simVerdict" hidden></p>
+      </div>
+
+      <div class="sim__panel">
+        <h3 class="sim__t">Adónde van los 10.000 clientes</h3>
+        <p class="sim__sub">Los clientes van adonde es más barato y más rico</p>
+        <div class="sim__bars" id="simBars"></div>
+        <dl class="sim__stats" id="simStats"></dl>
+        <p class="sim__warn" id="simWarn" hidden></p>
+      </div>
+    </div>
+    <p class="figcap">Aquí se muestra un solo año, como en la Liga 12. Los competidores están quietos; en una partida real juegan al mismo tiempo que tú, y eso lo cambia todo.</p>
+  </div>
+</section>
+
+
+<!-- HOW IT RUNS -->
+<section class="sect">
+  <div class="wrap">
+    <span class="eyebrow">QUÉ PASA EN LA MESA&nbsp;/&nbsp;EN LA PANTALLA</span>
+    <h2>Las reglas se aprenden jugando.<br>Igual que en un negocio real.</h2>
+    <figure class="figure" style="margin-bottom:clamp(30px,4.5vw,46px)"><img src="../format-en.jpg" width="1150" height="647" alt="Formato del juego: de 4 a 20 participantes, un año de juego de doce meses, turnos de tres a cinco minutos, en línea o presencial" loading="lazy"></figure>
+    <div class="steps">
+      <article><h3>No habrá instrucciones</h3><p>Te sientas y empiezas a jugar de inmediato. La mecánica se entiende en los primeros meses, igual que en los negocios, donde nadie te da un manual antes de abrir ni te pregunta si tienes derecho a equivocarte.</p></article>
+      <article><h3>Tú tomas las decisiones</h3><p>De tres a cinco minutos por turno. Precio, calidad, canales y presupuesto de publicidad, mesas, personal, préstamos. Lo que hacen tus competidores, no lo sabes.</p></article>
+      <article><h3>El mercado calcula</h3><p>El modelo reparte los clientes entre todos los jugadores y recalcula el dinero. Sin notas del anfitrión ni favoritos: solo economía.</p></article>
+      <article><h3>Ves el resultado</h3><p>Un informe de tu empresa: ingresos, costos, ganancia, caja, participación de mercado. Y una tabla general que muestra quién se adelantó.</p></article>
+      <article><h3>Mes siguiente</h3><p>La estrategia se ve en una serie de turnos, no en uno solo. Un error del tercer mes te alcanza en el séptimo, y eso es lo más útil que da un simulador.</p></article>
+      <article><h3>El análisis final</h3><p>Después del último mes analizamos quién hizo qué y por qué salió así. Aquí es donde ocurre la mayor parte del aprendizaje.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUMENTS -->
+<section class="sect sect--tint">
+  <div class="wrap">
+    <span class="eyebrow">TUS HERRAMIENTAS</span>
+    <h2>Lo que está bajo tu control</h2>
+    <figure class="figure" style="margin-bottom:clamp(30px,4.5vw,46px)"><img src="../your-company-en.jpg" width="1024" height="576" alt="Manejas una empresa: precio, calidad, seis canales de publicidad, presupuesto de publicidad, mesas, personal, préstamos e inversiones" loading="lazy"></figure>
+    <div class="tools">
+      <span>Precio</span><span>Calidad</span>
+      <span>6 canales de publicidad</span><span>Presupuesto de publicidad</span>
+      <span>Número de mesas</span><span>Personal</span>
+      <span>Préstamos</span><span>Inversiones</span>
+    </div>
+    <p class="mute" style="margin-top:24px;font-size:16.5px;max-width:74ch">Ninguna herramienta funciona sola. Un precio bajo sin calidad trae clientes que no vuelven. La publicidad sin capacidad trae una fila que nadie puede atender. Un préstamo cubre un hueco de caja y abre otro.</p>
+  </div>
+</section>
+
+<!-- THE SHELL -->
+<section class="sect sect--dark">
+  <div class="wrap">
+    <div class="split">
+    <div>
+      <span class="eyebrow">LO PRINCIPAL DEL JUEGO</span>
+      <h2>El patio de comidas es solo una envoltura</h2>
+    </div>
+    <div class="prose">
+      <p>En el juego manejas un restaurante en un patio de comidas. Eso no significa que el juego trate de restaurantes.</p>
+      <p>Cambia el menú del día por una suscripción, la instalación de ventanas, un corte de pelo, servicios legales, un curso de inglés o un lote de mercancía de China: el modelo no cambia en nada. Demanda limitada. Competidores que pelean por las mismas personas. Precio contra calidad. Publicidad que puede no recuperarse. Capacidad que choca con el dinero. Y un hueco de caja que llega antes que la ganancia.</p>
+      <p>Elegimos el patio de comidas porque cualquiera entiende sus reglas en dos minutos, sin conocer el sector. Después empieza tu propio negocio, solo que sin el riesgo de perder dinero real.</p>
+    </div>
+    </div>
+    <figure class="figure"><img src="../market-calc-en.jpg" width="1024" height="500" alt="El mercado calcula solo: las empresas deciden, el modelo calcula, 10.000 clientes se reparten entre los restaurantes y aparece un informe mensual con ingresos, costos, ganancia, dinero en caja y participación de mercado" loading="lazy"></figure>
+    <p class="figcap">La misma mecánica sirve para cualquier negocio: solo cambia el letrero de la puerta.</p>
+  </div>
+</section>
+
+<!-- HUMANS, NOT MACHINES -->
+<section class="sect sect--tint">
+  <div class="wrap">
+    <div class="split">
+    <div>
+      <span class="eyebrow">Y POR QUÉ NO PREGUNTARLE A UNA IA</span>
+      <h2>Juegas contra personas, no contra modelos</h2>
+    </div>
+    <div class="prose">
+      <p>Pídele una estrategia a una IA y recibirás una respuesta competente, correcta y totalmente estándar. El problema es que en un mercado real no te enfrentas a un modelo, sino a la persona de la mesa de al lado.</p>
+      <p>Es como el ajedrez. Una partida contra la computadora y una partida contra una persona son dos juegos distintos. La computadora busca la mejor jugada. La persona se empecina, blufea, baja precios por despecho, te copia con dos meses de retraso o de repente hace algo que ningún cálculo propondría. Justo para eso no se puede preparar uno con un libro.</p>
+      <p>Por eso, la mejor mesa es aquella donde los demás tienen más experiencia que tú. En una sola noche ves jugadas que no aparecen en ningún manual y entiendes cómo se comporta de verdad la gente en un mercado.</p>
+    </div>
+    </div>
+
+    <div class="card" style="margin-top:clamp(26px,4vw,40px);max-width:78ch">
+      <span class="card__tag">EL ERROR QUE EXPONE EL JUEGO</span>
+      <p style="font-size:16.5px">Puedes armar una empresa impecable. Precio calculado, calidad honesta, publicidad en los canales correctos, salón a la medida de la demanda: en papel todo cuadra. Y aun así pierdes, porque el competidor de al lado actuó de una forma que tu modelo nunca contempló.</p>
+      <p style="font-size:16.5px;margin-top:1em">El destino de un negocio no lo decide cómo está organizada la empresa por dentro, sino lo que pasa entre tú y la mesa de al lado. Ningún consultor te mostrará eso, ni humano ni artificial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOUR USES -->
+<section class="sect">
+  <div class="wrap">
+    <span class="eyebrow">POR QUÉ SE JUEGA</span>
+    <h2>Cuatro herramientas en un solo formato</h2>
+    <figure class="figure figure--mid" style="margin-bottom:clamp(30px,4.5vw,46px)"><img src="../four-tools-en.jpg" width="1024" height="774" alt="Cuatro usos del juego Market Game: capacitación, evaluación, diagnóstico y práctica" loading="lazy"></figure>
+    <div class="cards cards--4">
+      <div class="card"><span class="card__tag">CAPACITACIÓN</span><p>Las habilidades se forman en la acción. No son apuntes sobre unit economics, sino una decisión que un mes después se convirtió en pérdida.</p></div>
+      <div class="card"><span class="card__tag">EVALUACIÓN</span><p>Una sola partida muestra cómo una persona hace cuentas, decide con datos incompletos y aguanta un golpe. Un currículum no muestra nada de eso.</p></div>
+      <div class="card"><span class="card__tag">DIAGNÓSTICO</span><p>Los hábitos de gestión aparecen desde los primeros turnos. Tú mismo verás tus fortalezas y puntos débiles, sin notas de nadie.</p></div>
+      <div class="card"><span class="card__tag">PRÁCTICA</span><p>El juego se puede repetir: cambia la estrategia, prueba de otra manera y compara el resultado en el mismo modelo.</p></div>
+    </div>
+
+    <h2 style="margin-top:clamp(44px,6vw,72px)">Lo que una partida revela de una persona</h2>
+    <ul class="seen">
+      <li>Si hace las cuentas o va a ciegas</li>
+      <li>Qué hace después de la primera pérdida</li>
+      <li>Si baja precios por pánico cuando empieza a perder clientes</li>
+      <li>Si pide un préstamo que podría evitar</li>
+      <li>Si se da cuenta de que la publicidad no se está pagando</li>
+      <li>Si sabe detenerse y volver a calcular</li>
+      <li>Cómo reacciona cuando un competidor lo supera</li>
+      <li>Si cambia de estrategia o se aferra a la primera</li>
+    </ul>
+  </div>
+</section>
+
+<!-- WHO IT FITS -->
+<section class="sect sect--tint">
+  <div class="wrap">
+    <span class="eyebrow">PARA QUIÉN ES</span>
+    <h2>A quién solemos ver en la mesa</h2>
+    <div class="cards cards--4">
+      <div class="card"><h3>Emprendedores</h3><p>Para probar su estrategia y sus hábitos de gestión donde un error solo cuesta puntos.</p></div>
+      <div class="card"><h3>Gerentes y equipos</h3><p>Para ver cómo decide el equipo bajo presión y con el tiempo limitado.</p></div>
+      <div class="card"><h3>RR. HH. y capacitación</h3><p>Evaluación y capacitación en un mismo evento, con comportamiento observable en lugar de cuestionarios.</p></div>
+      <div class="card"><h3>Quienes todavía se preparan</h3><p>Para entender el precio de los errores típicos antes de pagarlo con su propio dinero.</p></div>
+    </div>
+
+    <h2 id="leagues" style="margin-top:clamp(44px,6vw,72px)">Tres ligas</h2>
+    <p class="lede">Las ligas se diferencian por la duración del juego y por quién se sienta a la mesa. Elige la que te describe hoy.</p>
+    <div class="leagues">
+
+      <div class="league">
+        <span class="league__tag">LIGA 12 · INICIO</span>
+        <p class="league__name">Todavía sin negocio</p>
+        <p class="league__price">US$ 25<span class="league__per">por equipo, no por persona</span></p>
+        <p class="league__who">Estás por empezar algo y quieres conocer el precio de los errores típicos antes de pagarlo con tu propio dinero.</p>
+        <ul class="league__facts">
+          <li>12 meses de juego en una sola sesión</li>
+          <li>Juegas contra otros principiantes</li>
+          <li>Análisis de decisiones después del juego</li>
+        </ul>
+        <button type="button" class="btn" data-lead="l12">Quiero jugar en esta liga</button>
+      </div>
+
+      <div class="league league--hot">
+        <span class="league__tag">LIGA 24 · CRECIMIENTO</span>
+        <p class="league__name">Tu negocio ya funciona</p>
+        <p class="league__price">US$ 100<span class="league__per">por equipo, no por persona</span></p>
+        <p class="league__who">Hasta diez empleados y hasta un millón de dólares al año. Es momento de ver qué hace tu estrategia en una distancia más larga.</p>
+        <ul class="league__facts">
+          <li>24 meses de juego en una sola sesión</li>
+          <li>Juegas contra emprendedores en actividad</li>
+          <li>Análisis basado en tu economía real</li>
+        </ul>
+        <button type="button" class="btn" data-lead="l24">Quiero jugar en esta liga</button>
+      </div>
+
+      <div class="league">
+        <span class="league__tag">LIGA 36 · ÉLITE</span>
+        <p class="league__name">Medianas y grandes empresas</p>
+        <p class="league__price">US$ 3.000<span class="league__per">por equipo, no por persona</span></p>
+        <p class="league__who">Una sesión de estrategia: poner a prueba una hipótesis en un horizonte largo, ver al equipo directivo en acción y analizar las decisiones paso a paso.</p>
+        <ul class="league__facts">
+          <li>36 meses de juego en una sola sesión</li>
+          <li>Juegas contra dueños de medianas y grandes empresas</li>
+          <li>Análisis detallado para el dueño</li>
+        </ul>
+        <button type="button" class="btn" data-lead="l36">Quiero jugar en esta liga</button>
+      </div>
+
+    </div>
+    <p class="leaguenote"><b>El precio es por todo el equipo.</b> El equipo puede ser de cualquier tamaño: ven solo, en pareja o con todo un departamento. En una partida se juntan de cuatro a veinte equipos: cuanta más gente en la mesa, más disputado el mercado y más honesto el resultado.</p>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="sect sect--dark" id="calendar">
+  <div class="wrap">
+    <span class="eyebrow">CALENDARIO</span>
+    <h2>Próximas partidas</h2>
+    <p class="lede">Hay partidas abiertas en todo Estados Unidos —en cada una de las cuatro zonas horarias y en estados concretos— además de partidas internacionales en inglés. Los horarios se muestran en tu reloj: la página toma la zona horaria de tu dispositivo.</p>
+    <div class="schedule" id="schedule">
+      <p class="mute">Activa JavaScript para ver el calendario, o simplemente envía una solicitud y un asesor te dirá las fechas más cercanas.</p>
+    </div>
+    <p class="schedule__note"><b>Puedes unirte a cualquier partida.</b> La partida de un estado o de una zona horaria solo está programada a una hora cómoda para esa región: no hace falta vivir allí. Para Alaska y Hawái, las partidas en hora del Pacífico son las más cercanas. Si ningún horario te sirve, envía una solicitud y dinos cuándo tienes tiempo.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sect sect--tint">
+  <div class="wrap">
+    <span class="eyebrow">PREGUNTAS FRECUENTES</span>
+    <h2>Respuestas breves</h2>
+    <div class="faq">
+      <details>
+        <summary>Quiero abrir un negocio, pero no tengo experiencia. ¿Por dónde empiezo?</summary>
+        <p class="faq__a">Por un error barato. En una sola noche el juego te hace recorrer lo que en la vida lleva un año: fijas un precio, metes dinero en publicidad y te topas con un hueco de caja. Aquí el error cuesta puntos, no ahorros. Así, cuando lo mismo le pase a tu dinero, ya lo habrás vivido y sabrás cómo termina.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto cuesta?</summary>
+        <p class="faq__a">Tres ligas: US$ 25 por equipo si todavía no tienes negocio; US$ 100 si tu negocio ya funciona, con hasta diez empleados y hasta un millón de dólares al año; US$ 3.000 por una sesión de estrategia para medianas y grandes empresas. El precio siempre cubre a todo el equipo, y el equipo puede ser de cualquier tamaño.</p>
+      </details>
+      <details>
+        <summary>¿En qué se diferencian las ligas?</summary>
+        <p class="faq__a">Solo en dos cosas: la duración del juego y quién más está en la mesa. La Liga 12 son doce turnos entre otros principiantes. La Liga 24 son veinticuatro turnos entre emprendedores en actividad. La Liga 36 son treinta y seis turnos entre dueños de medianas y grandes empresas. El modelo de mercado es el mismo en todas las ligas: no lo ajustamos a tu sector.</p>
+      </details>
+      <details>
+        <summary>12, 24, 36 meses: ¿cuánto de mi tiempo es eso?</summary>
+        <p class="faq__a">Son meses del juego, no del calendario: no esperas un año, y mucho menos tres. Toda la partida se juega en una sola sesión, y un mes del juego es un turno de tres a cinco minutos. Lo que cambia entre las ligas es cuántos turnos juegas y hasta dónde se ven las consecuencias de tus decisiones.</p>
+      </details>
+      <details>
+        <summary>¿Para qué jugar, si puedo pedirle una estrategia a una IA?</summary>
+        <p class="faq__a">Una IA te dará una estrategia competente y estándar, justo lo que nunca ocurre en un mercado real. Allí te enfrentas a personas: se empecinan, blufean, bajan precios por despecho y hacen jugadas que ningún cálculo contemplaría. El juego te da lo que ningún consultor puede: cómo se comportan de verdad los competidores, y no una fórmula de libro.</p>
+      </details>
+      <details>
+        <summary>¿Es en línea o tengo que ir a algún lugar?</summary>
+        <p class="faq__a">Las dos opciones. La mecánica es la misma: tú decides, el modelo calcula y todos ven el resultado. La modalidad presencial suma negociaciones en vivo con la mesa de al lado; la modalidad en línea permite armar un equipo con gente de distintas ciudades.</p>
+      </details>
+      <details>
+        <summary>¿Tengo que prepararme o aprender las reglas antes?</summary>
+        <p class="faq__a">No. No hay instrucciones antes del juego, y es a propósito. La mecánica se entiende en los primeros meses, igual que en los negocios, donde nadie te da un manual antes del día de apertura.</p>
+      </details>
+      <details>
+        <summary>¿En qué se diferencia de un curso de negocios?</summary>
+        <p class="faq__a">En un curso te explican unit economics. Aquí tú mismo fijas el precio, pierdes clientes y lees el informe que muestra que la publicidad no se pagó. Nadie pone notas: solo cuenta el mercado.</p>
+      </details>
+      <details>
+        <summary>Estoy solo, sin equipo. ¿Puedo jugar?</summary>
+        <p class="faq__a">Sí. Un equipo de una persona también es un equipo, y el precio es el mismo. Jugarás contra los demás participantes, no contra el anfitrión.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="sect sect--dark final">
+  <div class="wrap">
+    <span class="eyebrow">TU PRÓXIMA JUGADA</span>
+    <h2>Pon a prueba el negocio antes de pagar por él</h2>
+    <p class="lede">Aquí los errores solo cuestan puntos. Todo lo demás es como en la vida.</p>
+    <div class="btns" style="margin-top:30px">
+      <button type="button" class="btn" data-lead="">Enviar solicitud</button>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="foot">
+    <span>«Market Game» · simulación empresarial en equipo</span>
+    <span>Contáctanos: <a href="https://t.me/Nickbv">Telegram</a> · <a href="https://wa.me/66823204796">WhatsApp</a></span>
+    <span><a href="../phuket/es/">Phuket Business League</a>: nuestra comunidad presencial de emprendedores en la isla de Phuket</span>
+    <span><a href="privacy.html">Política de privacidad</a></span>
+  </div>
+</footer>
+
+<script>
+window.SIM_CONFIG = {
+  locale: 'es-419', currency: 'USD', priceDecimals: 2,
+  refPrice: 10, startCash: 50000, fixed: 3000, perTable: 35,
+  adReference: 3750, unitBase: 1, unitPerQuality: 0.4,
+  rivals: [
+    {id:'P2', color:'#3B82C4', price:8.75,  q:5, ad:3000, tables:110},
+    {id:'P3', color:'#2E9E5B', price:10.50, q:7, ad:4500, tables:130},
+    {id:'P4', color:'#E0A030', price:7.50,  q:4, ad:2250, tables:100},
+    {id:'P5', color:'#8B5CC7', price:12.00, q:8, ad:5000, tables:120}
+  ],
+  text: {
+    demand:   'Demanda de tu restaurante',
+    capacity: 'Capacidad del salón',
+    served:   'Clientes atendidos',
+    revenue:  'Ingresos',
+    costs:    'Costos',
+    profit:   'Ganancia del mes',
+    share:    'Participación de mercado',
+    qualValue:'{n} / 10',
+    cashLine: 'Dinero en caja · mes {m} de {t}',
+    warn:     '{demand} personas querían venir a tu restaurante, pero el salón admite {cap}. La competencia se quedó con la diferencia. La publicidad sin capacidad crea una fila que nadie puede atender.',
+    verdictWin:  'Terminó el año de juego. Ganaste {n}. En una partida real, a tu lado hay personas que pasaron todo el año tratando de impedirlo.',
+    verdictLose: 'Terminó el año de juego. Perdiste {n}. Aquí te costó un par de minutos; en la vida real te costaría un año y todos tus ahorros.'
+  }
+};
+</script>
+<script src="../sim.js"></script>
+
+<script>
+window.FORM_CONFIG = {
+  "endpoint": "https://script.google.com/macros/s/AKfycbxE0kMC6oIlYu7r6wyIFLdjhnkD862wcumVuhh9k7uDW4CD8QnOKINW2HWd_IWopeQE/exec",
+  "lang": "es",
+  "privacyUrl": "privacy.html",
+  "fallback": {
+    "url": "https://t.me/nickbv",
+    "label": "@nickbv"
+  },
+  "leagues": {
+    "": "Todavía no lo sé",
+    "l12": "Liga 12 · Inicio — US$ 25",
+    "l24": "Liga 24 · Crecimiento — US$ 100",
+    "l36": "Liga 36 · Élite — US$ 3.000"
+  },
+  "managerLeagues": {
+    "": "Пока не выбрал",
+    "l12": "Лига 12 · Старт — US$ 25",
+    "l24": "Лига 24 · Рост — US$ 100",
+    "l36": "Лига 36 · Элита — US$ 3.000"
+  },
+  "text": {
+    "title": "Inscripción a una partida",
+    "subtitle": "Te respondemos en un día y te contamos sobre las próximas partidas.",
+    "name": "Tu nombre",
+    "namePh": "Nombre",
+    "phone": "Teléfono",
+    "phonePh": "+1 555 000 0000",
+    "telegram": "Usuario de Telegram",
+    "telegramPh": "@usuario",
+    "league": "Qué te interesa",
+    "consent": "Acepto el tratamiento de mis datos personales —",
+    "privacy": "política de privacidad",
+    "submit": "Enviar solicitud",
+    "sending": "Enviando…",
+    "successTitle": "Solicitud recibida",
+    "successText": "Te contactaremos en un día. Si no tienes noticias nuestras, escríbenos directamente: el contacto está al pie de la página.",
+    "close": "Cerrar",
+    "errName": "Dinos cómo llamarte.",
+    "errContact": "Deja un teléfono o un usuario de Telegram; si no, no podremos responderte.",
+    "errPhone": "El teléfono parece incompleto. Revisa el número.",
+    "errConsent": "Sin tu consentimiento para tratar los datos no podemos aceptar la solicitud.",
+    "errSend": "No se pudo enviar la solicitud.",
+    "errSendFallback": "Escríbenos directamente:"
+  }
+};
+</script>
+<script src="../form.js"></script>
+<script>
+window.SCHEDULE_CONFIG = {
+  "locale": "es-419",
+  "hour12": false,
+  "limit": 8,
+  "clocks": [
+    {
+      "label": "Los Ángeles",
+      "tz": "America/Los_Angeles"
+    },
+    {
+      "label": "Denver",
+      "tz": "America/Denver"
+    },
+    {
+      "label": "Chicago",
+      "tz": "America/Chicago"
+    },
+    {
+      "label": "Nueva York",
+      "tz": "America/New_York"
+    },
+    {
+      "label": "Londres",
+      "tz": "Europe/London"
+    },
+    {
+      "label": "UTC",
+      "tz": "UTC"
+    }
+  ],
+  "seo": {
+    "name": "Market Game",
+    "organizer": "Market Game",
+    "url": "https://marketgame.club/es/",
+    "currency": "USD",
+    "prices": {
+      "l12": 25,
+      "l24": 100,
+      "l36": 3000
+    }
+  },
+  "leagues": {
+    "l12": "Liga 12",
+    "l24": "Liga 24",
+    "l36": "Liga 36"
+  },
+  "streams": {
+    "intl": "Internacional",
+    "eastern": "Hora del Este",
+    "central": "Hora del Centro",
+    "mountain": "Hora de la Montaña",
+    "pacific": "Hora del Pacífico",
+    "ny": "Nueva York",
+    "fl": "Florida",
+    "tx": "Texas",
+    "il": "Illinois",
+    "co": "Colorado",
+    "az": "Arizona",
+    "ca": "California",
+    "wa": "Washington"
+  },
+  "kinds": {
+    "intl": "Partida abierta · internacional",
+    "eastern": "Partida abierta · zona horaria",
+    "ny": "Partida abierta · estado",
+    "fl": "Partida abierta · estado",
+    "central": "Partida abierta · zona horaria",
+    "tx": "Partida abierta · estado",
+    "il": "Partida abierta · estado",
+    "mountain": "Partida abierta · zona horaria",
+    "co": "Partida abierta · estado",
+    "az": "Partida abierta · estado",
+    "pacific": "Partida abierta · zona horaria",
+    "ca": "Partida abierta · estado",
+    "wa": "Partida abierta · estado"
+  },
+  "states": {
+    "eastern": {
+      "short": "CT, DC, DE, FL, GA, IN, KY, MA, MD, ME, MI, NC, NH, NJ, NY, OH, PA, RI, SC, VA, VT, WV",
+      "full": "Connecticut, District of Columbia, Delaware, Florida, Georgia, Indiana, Kentucky, Massachusetts, Maryland, Maine, Michigan, North Carolina, New Hampshire, New Jersey, New York, Ohio, Pennsylvania, Rhode Island, South Carolina, Virginia, Vermont, West Virginia"
+    },
+    "central": {
+      "short": "AL, AR, IA, IL, KS, LA, MN, MO, MS, ND, NE, OK, SD, TN, TX, WI",
+      "full": "Alabama, Arkansas, Iowa, Illinois, Kansas, Louisiana, Minnesota, Missouri, Mississippi, North Dakota, Nebraska, Oklahoma, South Dakota, Tennessee, Texas, Wisconsin"
+    },
+    "mountain": {
+      "short": "AZ, CO, ID, MT, NM, UT, WY",
+      "full": "Arizona, Colorado, Idaho, Montana, New Mexico, Utah, Wyoming"
+    },
+    "pacific": {
+      "short": "CA, NV, OR, WA",
+      "full": "California, Nevada, Oregon, Washington"
+    }
+  },
+  "groups": {
+    "intl": "intl",
+    "eastern": "et",
+    "ny": "et",
+    "fl": "et",
+    "central": "ct",
+    "tx": "ct",
+    "il": "ct",
+    "mountain": "mt",
+    "co": "mt",
+    "az": "mt",
+    "pacific": "pt",
+    "ca": "pt",
+    "wa": "pt"
+  },
+  "filters": [
+    {
+      "id": "all",
+      "label": "Todas"
+    },
+    {
+      "id": "et",
+      "label": "Este"
+    },
+    {
+      "id": "ct",
+      "label": "Centro"
+    },
+    {
+      "id": "mt",
+      "label": "Montaña"
+    },
+    {
+      "id": "pt",
+      "label": "Pacífico"
+    },
+    {
+      "id": "intl",
+      "label": "Internacional"
+    }
+  ],
+  "text": {
+    "duration": "{h} h",
+    "yourTime": "en tu hora",
+    "soonest": "la próxima",
+    "cta": "Reservar lugar",
+    "empty": "No hay partidas en este grupo en las próximas semanas. Envía una solicitud y un asesor te dirá las fechas más cercanas.",
+    "monthCount": "Partidas en los próximos 30 días: {n}",
+    "decimal": ".",
+    "otherDay": "en esta ciudad ya es otro día",
+    "filterLabel": "Ver partidas por región"
+  },
+  "manager": {
+    "locale": "ru-RU",
+    "leagues": {
+      "l12": "Лига 12",
+      "l24": "Лига 24",
+      "l36": "Лига 36"
+    },
+    "streams": {
+      "intl": "Международная",
+      "eastern": "Восточное время",
+      "central": "Центральное время",
+      "mountain": "Горное время",
+      "pacific": "Тихоокеанское время",
+      "ny": "Нью-Йорк",
+      "fl": "Флорида",
+      "tx": "Техас",
+      "il": "Иллинойс",
+      "co": "Колорадо",
+      "az": "Аризона",
+      "ca": "Калифорния",
+      "wa": "Вашингтон"
+    }
+  }
+};
+</script>
+<script src="../schedule-exceptions.js"></script>
+<script src="../schedule.js"></script>
+</body>
+</html>
