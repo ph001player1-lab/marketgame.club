@@ -18,6 +18,7 @@ KIND = {'intl': 'Jogo aberto · internacional', 'zone': 'Jogo aberto · fuso hor
 FILTERS = {'all': 'Todos os jogos', 'et': 'Leste', 'ct': 'Central', 'mt': 'Montanha', 'pt': 'Pacífico',
            'intl': 'Internacional'}
 SCHED_TEXT = {
+    'watch': 'Assistir grátis',
     'duration': '{h} h',
     'yourTime': 'no seu horário',
     'soonest': 'o próximo',
@@ -29,6 +30,7 @@ SCHED_TEXT = {
     'filterLabel': 'Mostrar jogos por região',
 }
 FORM_LEAGUE_NONE = 'Ainda não sei'
+FORM_WATCH = 'Assistir a um jogo — grátis'
 FORM_TEXT = {
     'title': 'Inscrição no jogo',
     'subtitle': 'Respondemos em até um dia e contamos sobre os próximos jogos.',
@@ -249,4 +251,8 @@ T = {
   157: 'Você administra uma empresa: preço, qualidade, seis canais de publicidade, verba de publicidade, mesas, funcionários, empréstimos e investimentos',
   158: 'O mercado calcula sozinho: as empresas tomam decisões, o modelo faz as contas, 10.000 clientes se dividem entre os restaurantes e sai um relatório mensal — receita, custos, lucro, dinheiro em caixa e participação de mercado',
   159: 'Quatro usos do jogo Market Game: treinamento, avaliação, diagnóstico e prática',
+  160: 'Posso só assistir a um jogo primeiro?',
+  161: 'Sim, e é grátis. Envie um pedido e escolha “Assistir a um jogo — grátis”: diremos qual é o próximo jogo e mandaremos o link ou o endereço. Você vê como o mercado reage às decisões e como é a análise final — e depois decide se quer jogar.',
+  162: '<b>Assistir é grátis.</b> Ainda não está pronto para jogar? Venha como espectador: envie um pedido e escolha “Assistir a um jogo — grátis”.',
+  163: 'Assistir a um jogo grátis',
 }

@@ -61,7 +61,7 @@ L = dict(
           'Sau trò chơi, chúng tôi cùng phân tích các quyết định, và mỗi người trong bàn nói mình sẽ làm khác đi thế nào. Chính lúc đó mọi người thật sự quen nhau.'],
   facts=[('Hạng 12 · Khởi đầu', 'sắp khởi nghiệp · 12 tháng trong trò chơi · 2 giờ · ฿1,000 mỗi đội'),
          ('Hạng 24 · Tăng trưởng', 'doanh nghiệp đang hoạt động · 24 tháng trong trò chơi · 2,5 giờ · ฿3,500 mỗi đội'),
-         ('Đội', 'bao nhiêu người cũng được — hoặc đến một mình'), ('Thanh toán', 'tại buổi gặp, không trả trước'), ('Chỉ đến xem', 'rất hoan nghênh')],
+         ('Đội', 'bao nhiêu người cũng được — hoặc đến một mình'), ('Thanh toán', 'tại buổi gặp, không trả trước'), ('Chỉ đến xem', 'miễn phí — gửi đăng ký và chọn “Xem một ván”')],
   game_more='Tìm hiểu thêm về trò chơi trên trang chính →',
   priv_h3='Trò chơi riêng cho đội của bạn',
   priv_p='Cho khách sạn và công ty: một trò chơi hoặc workshop chỉ dành cho người của bạn. Buổi họp chiến lược dưới dạng trò chơi, tối đa 4 giờ. Giá theo yêu cầu.',
@@ -95,7 +95,8 @@ L = dict(
   foot_game='Trò chơi',
 
   form=dict(
-    leagues={'pk_meet': 'Một buổi gặp cụ thể', 'pk_join': 'Tham gia cộng đồng', 'pk_talk': 'Trò chuyện với ban tổ chức',
+    leagues={'pk_meet': 'Một buổi gặp cụ thể', 'pk_watch': 'Xem một ván — miễn phí',
+             'pk_join': 'Tham gia cộng đồng', 'pk_talk': 'Trò chuyện với ban tổ chức',
              'pk_team': 'Trò chơi riêng cho đội', 'pk_partner': 'Hợp tác'},
     text={
       'title': 'Đăng ký', 'subtitle': 'Chúng tôi sẽ trả lời riêng và gửi địa chỉ buổi gặp.',

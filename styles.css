@@ -240,6 +240,9 @@ button{font-family:inherit}
 .league .btn{margin-top:auto;text-align:center}
 .leaguenote{margin:clamp(20px,3vw,28px) 0 0;font-size:16px;color:var(--mute);max-width:70ch}
 .leaguenote b{color:var(--ink);font-weight:700}
+.leaguewatch{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:clamp(18px,2.5vw,24px);padding:clamp(16px,2.5vw,22px);border:2px dashed var(--ink)}
+.leaguewatch p{margin:0;flex:1 1 320px;font-size:16px}
+.leaguewatch b{font-weight:700}
 
 /* --- календарь игр ---
    Список собирается скриптом, поэтому разметка описана в schedule.js,
@@ -276,6 +279,8 @@ button{font-family:inherit}
 /* на узком экране кнопка занимает всю ширину, иначе она болтается в пустоте */
 .game__go{margin-top:6px}
 .game__go .btn{width:100%;text-align:center}
+.game__watch{display:block;width:100%;margin-top:8px;padding:4px 0;background:none;border:0;font:inherit;font-size:13.5px;font-weight:700;color:#A9A9B2;text-decoration:underline;text-underline-offset:3px;cursor:pointer;white-space:nowrap}
+.game__watch:hover{color:var(--paper)}
 @media(min-width:820px){
   .game{grid-template-columns:175px minmax(0,1fr) auto;gap:20px}
   .game__clocks{grid-template-columns:repeat(3,minmax(0,1fr))}

@@ -18,6 +18,7 @@ KIND = {'intl': 'Open game · International', 'zone': 'Open game · Time zone', 
 FILTERS = {'all': 'All games', 'et': 'Eastern', 'ct': 'Central', 'mt': 'Mountain', 'pt': 'Pacific',
            'intl': 'International'}
 SCHED_TEXT = {
+    'watch': 'Watch free',
     'duration': '{h} h',
     'yourTime': 'your local time',
     'soonest': 'next up',
@@ -29,6 +30,7 @@ SCHED_TEXT = {
     'filterLabel': 'Show games by region',
 }
 FORM_LEAGUE_NONE = 'Not sure yet'
+FORM_WATCH = 'Watch a game — free'
 FORM_TEXT = {
     'title': 'Join a game',
     'subtitle': 'We reply within a day and tell you about the next games.',

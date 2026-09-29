@@ -55,6 +55,9 @@ minutes.
 Payment is arranged directly with a manager after a request is submitted
 through the site. There is no online checkout.
 
+Watching a game as a spectator is free: submit a request and choose
+“Watch a game — free” (on the Phuket page too).
+
 ## Why a live game rather than an AI consultant
 
 On a real market you compete against people, not against models. An AI will

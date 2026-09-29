@@ -61,7 +61,7 @@ L = dict(
           'After the game we go through the decisions together, and everyone at the table says what they would do differently. That is where people really get to know each other.'],
   facts=[('League 12 · Start', 'about to start a business · 12 game months · 2 h · ฿1,000 per team'),
          ('League 24 · Growth', 'your business already runs · 24 game months · 2.5 h · ฿3,500 per team'),
-         ('Team', 'any size — or come alone'), ('Payment', 'at the meeting, no prepayment'), ('Just watching', 'welcome')],
+         ('Team', 'any size — or come alone'), ('Payment', 'at the meeting, no prepayment'), ('Just watching', 'free — send a request and choose “Watch a game”')],
   game_more='More about the game on the main site →',
   priv_h3='A closed game for your team',
   priv_p='For hotels and companies: a game or workshop just for your people. A strategy session in game form, up to 4 hours. Price on request.',
@@ -95,7 +95,8 @@ L = dict(
   foot_game='The game',
 
   form=dict(
-    leagues={'pk_meet': 'A specific meeting', 'pk_join': 'Join the community', 'pk_talk': 'Talk to the organizers',
+    leagues={'pk_meet': 'A specific meeting', 'pk_watch': 'Watch a game — free',
+             'pk_join': 'Join the community', 'pk_talk': 'Talk to the organizers',
              'pk_team': 'A closed game for a team', 'pk_partner': 'Partnership'},
     text={
       'title': 'Sign up', 'subtitle': 'We will reply personally and send you the address of the meeting.',

@@ -61,7 +61,7 @@ L = dict(
           'Depois do jogo analisamos as decisões juntos, e cada um na mesa diz o que faria diferente. É aí que as pessoas realmente se conhecem.'],
   facts=[('Liga 12 · Início', 'vai abrir um negócio · 12 meses de jogo · 2 h · ฿1,000 por equipe'),
          ('Liga 24 · Crescimento', 'seu negócio já funciona · 24 meses de jogo · 2,5 h · ฿3,500 por equipe'),
-         ('Equipe', 'de qualquer tamanho — ou venha sozinho'), ('Pagamento', 'no encontro, sem antecipação'), ('Só assistir', 'pode')],
+         ('Equipe', 'de qualquer tamanho — ou venha sozinho'), ('Pagamento', 'no encontro, sem antecipação'), ('Só assistir', 'grátis — envie um pedido e escolha “Assistir a um jogo”')],
   game_more='Mais sobre o jogo no site principal →',
   priv_h3='Um jogo fechado para a sua equipe',
   priv_p='Para hotéis e empresas: um jogo ou workshop só para o seu pessoal. Uma sessão de estratégia em forma de jogo, até 4 horas. Preço sob consulta.',
@@ -95,7 +95,8 @@ L = dict(
   foot_game='O jogo',
 
   form=dict(
-    leagues={'pk_meet': 'Um encontro específico', 'pk_join': 'Entrar na comunidade', 'pk_talk': 'Falar com os organizadores',
+    leagues={'pk_meet': 'Um encontro específico', 'pk_watch': 'Assistir a um jogo — grátis',
+             'pk_join': 'Entrar na comunidade', 'pk_talk': 'Falar com os organizadores',
              'pk_team': 'Jogo fechado para equipe', 'pk_partner': 'Parceria'},
     text={
       'title': 'Inscrição', 'subtitle': 'Respondemos pessoalmente e mandamos o endereço do encontro.',

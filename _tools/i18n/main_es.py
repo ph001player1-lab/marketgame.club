@@ -18,6 +18,7 @@ KIND = {'intl': 'Partida abierta · internacional', 'zone': 'Partida abierta · 
 FILTERS = {'all': 'Todas', 'et': 'Este', 'ct': 'Centro', 'mt': 'Montaña', 'pt': 'Pacífico',
            'intl': 'Internacional'}
 SCHED_TEXT = {
+    'watch': 'Ver gratis',
     'duration': '{h} h',
     'yourTime': 'en tu hora',
     'soonest': 'la próxima',
@@ -29,6 +30,7 @@ SCHED_TEXT = {
     'filterLabel': 'Ver partidas por región',
 }
 FORM_LEAGUE_NONE = 'Todavía no lo sé'
+FORM_WATCH = 'Ver una partida — gratis'
 FORM_TEXT = {
     'title': 'Inscripción a una partida',
     'subtitle': 'Te respondemos en un día y te contamos sobre las próximas partidas.',
@@ -249,4 +251,8 @@ T = {
   157: 'Manejas una empresa: precio, calidad, seis canales de publicidad, presupuesto de publicidad, mesas, personal, préstamos e inversiones',
   158: 'El mercado calcula solo: las empresas deciden, el modelo calcula, 10.000 clientes se reparten entre los restaurantes y aparece un informe mensual con ingresos, costos, ganancia, dinero en caja y participación de mercado',
   159: 'Cuatro usos del juego Market Game: capacitación, evaluación, diagnóstico y práctica',
+  160: '¿Puedo solo ver una partida primero?',
+  161: 'Sí, y es gratis. Envía una solicitud y elige “Ver una partida — gratis”: te diremos cuál es la próxima partida y te enviaremos el enlace o la dirección. Verás cómo reacciona el mercado a las decisiones y cómo es el análisis final, y luego decides si quieres jugar.',
+  162: '<b>Mirar es gratis.</b> ¿Todavía no estás listo para jugar? Ven como espectador: envía una solicitud y elige “Ver una partida — gratis”.',
+  163: 'Ver una partida gratis',
 }

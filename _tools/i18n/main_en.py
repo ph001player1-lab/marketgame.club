@@ -162,4 +162,8 @@ SEG = {
   157: 'You run a company: price, quality, six advertising channels, advertising budget, tables, staff, loans and investments',
   158: 'The market counts by itself: companies make decisions, the model calculates, 10,000 customers are split between restaurants, and a monthly report appears — revenue, costs, profit, cash and market share',
   159: 'Four uses of the game Market Game: training, assessment, diagnostics and practice',
+  160: 'Can I just watch a game first?',
+  161: 'Yes, and it is free. Send a request and choose “Watch a game — free”: we will name the nearest game and send you a link or an address. You will see how the market reacts to decisions and how the debrief goes — and then decide whether to play.',
+  162: '<b>Watching is free.</b> Not ready to play yet? Come as a spectator: send a request and choose “Watch a game — free”.',
+  163: 'Watch a game for free',
 }
