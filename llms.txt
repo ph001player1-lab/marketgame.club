@@ -6,7 +6,8 @@
 > who would rather make their expensive mistakes on a game board than with
 > their own money.
 
-Run by Nikolay Bulenkov. Available online and offline. The site is in English.
+Available online and offline. The site is available in English, Russian,
+Vietnamese, Portuguese and Spanish.
 
 ## What it is
 
@@ -79,15 +80,6 @@ see it.
 - Diagnostics: managerial habits surface within the first few turns.
 - Practice: the same model can be replayed with a different strategy.
 
-## Author
-
-Nikolay Vladimirovich Bulenkov. Over twenty years in sales, management and
-business development. Created "Deal Simulator" in 2014, named the most
-useful training tool for realtors in Russia that year by MAUA. Sales
-director at Like Centre 2017–2019; head of the training centre of the
-"33 Slona" project within Mail.ru Group 2019–2021. Graduate of Bauman
-Moscow State Technical University.
-
 ## Schedule
 
 Open games run every week across the US and internationally, in English:
@@ -102,8 +94,11 @@ visitor's own time zone: https://marketgame.club/#calendar
 
 ## Pages
 
-- https://marketgame.club/ — the game
-- https://marketgame.club/phuket/ — Phuket Business League
+- https://marketgame.club/ — the game (English)
+- https://marketgame.club/ru/, /vi/, /pt/, /es/ — the game in Russian,
+  Vietnamese, Portuguese and Spanish
+- https://marketgame.club/phuket/ — Phuket Business League (also /phuket/ru/,
+  /phuket/vi/, /phuket/pt/, /phuket/es/)
 - https://marketgame.club/privacy.html — privacy policy
 
 ## Contact
