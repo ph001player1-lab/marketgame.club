@@ -58,17 +58,22 @@ jobs:
           PY
 
       - name: Сохранить, если изменилось
+        id: save
         run: |
           git diff --quiet -- stats.json && { echo 'Без изменений'; exit 0; }
           git config user.name 'stats-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add stats.json
           git commit -m 'stats.json: сводка за 30 дней'
-          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && { echo 'changed=1' >> "$GITHUB_OUTPUT"; exit 0; }
+            sleep 5
+          done
           exit 1
 
       # Публикация обычно запускается сама от коммита; это — страховка
       - name: Пересобрать сайт
+        if: steps.save.outputs.changed == '1'
         continue-on-error: true
         run: gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null
         env:
