@@ -45,6 +45,10 @@
       }
     }
     if (target) {
+      // для счётчика визитов (visit.js): эту страницу не считать, а откуда
+      // человек пришёл — передать странице, на которую перебрасываем
+      window.__mgRedirect = true;
+      try { sessionStorage.setItem('mg-ref', document.referrer); } catch (e) { /* не страшно */ }
       location.replace(target + '/' + location.search + location.hash);
       return;
     }

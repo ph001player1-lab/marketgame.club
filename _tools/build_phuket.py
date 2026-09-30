@@ -144,6 +144,7 @@ def build(code):
 <link rel="stylesheet" href="{up}styles.css">
 <link rel="stylesheet" href="{here}phuket.css">
 <script src="{up}lang.js"{root}></script>
+<script src="{up}visit.js" defer></script>
 
 <script type="application/ld+json">
 {J(ld)}
