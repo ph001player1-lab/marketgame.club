@@ -190,6 +190,8 @@
         ? (C.leaguePrefix || '') +
           ((C.managerLeagues || C.leagues)[form.league.value] || C.leagues[form.league.value]) : '',
       game: pickedGame,
+      // для статистики: Watch — посмотреть игру бесплатно, Play — всё остальное
+      type: /^(pk_)?watch$/.test(form.league.value) ? 'watch' : 'play',
       messenger: form.messenger ? form.messenger.value : '',
       company: form.company.value,
       elapsed: Date.now() - openedAt,

@@ -1,0 +1,75 @@
+# Публичная сводка marketgame.club/stats.json.
+#
+# Раз в час забирает сводку по дням у приёмника заявок (Google Apps Script,
+# адрес /exec?stats) и, если цифры изменились, кладёт её в stats.json в корне
+# репозитория — GitHub Pages публикует файл сам. Внутри только агрегаты по
+# дням: визиты, уникальные, источники, заявки Watch/Play.
+#
+# Запустить вручную: вкладка Actions → stats.json → Run workflow.
+
+name: stats.json
+
+on:
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: stats-json
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      ENDPOINT: https://script.google.com/macros/s/AKfycbxE0kMC6oIlYu7r6wyIFLdjhnkD862wcumVuhh9k7uDW4CD8QnOKINW2HWd_IWopeQE/exec
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Забрать сводку
+        run: curl -fsSL --retry 3 --retry-delay 10 "$ENDPOINT?stats=1" -o /tmp/stats-raw.json
+
+      - name: Проверить и записать
+        run: |
+          python3 - <<'PY'
+          import json, re, sys
+          data = json.load(open('/tmp/stats-raw.json'))
+          # старая версия скрипта отвечает не списком
+          # (скрипт ещё не обновлён) — тогда файл не трогаем и не падаем
+          if not isinstance(data, list) or not data:
+              print('::warning::Приёмник ещё не отдаёт сводку — обновите развёртывание Apps Script. '
+                    'Ответ: ' + json.dumps(data, ensure_ascii=False)[:200])
+              sys.exit(0)
+          keys = ['date', 'visits', 'unique', 'by_source', 'leads_watch', 'leads_play']
+          out = []
+          for d in data:
+              assert re.fullmatch(r'\d{4}-\d{2}-\d{2}', d['date']), d
+              row = {k: d[k] for k in keys}
+              for k in ('visits', 'unique', 'leads_watch', 'leads_play'):
+                  assert isinstance(row[k], int) and row[k] >= 0, (k, d)
+              assert isinstance(row['by_source'], dict)
+              out.append(row)
+          with open('stats.json', 'w') as f:
+              f.write('[\n' + ',\n'.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) for r in out) + '\n]\n')
+          PY
+
+      - name: Сохранить, если изменилось
+        run: |
+          git diff --quiet -- stats.json && { echo 'Без изменений'; exit 0; }
+          git config user.name 'stats-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add stats.json
+          git commit -m 'stats.json: сводка за 30 дней'
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
+
+      # Публикация обычно запускается сама от коммита; это — страховка
+      - name: Пересобрать сайт
+        continue-on-error: true
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null
+        env:
+          GH_TOKEN: ${{ github.token }}
