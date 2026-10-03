@@ -28,5 +28,5 @@
 {"date":"2026-10-01","visits":13,"unique":6,"by_source":{"direct":11,"facebook":1,"kaizenblueocean":1},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-02","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-03","visits":19,"unique":11,"by_source":{"direct":16,"kaizenblueocean":3},"leads_watch":0,"leads_play":0},
-{"date":"2026-10-04","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0}
+{"date":"2026-10-04","visits":1,"unique":1,"by_source":{"kaizenblueocean":1},"leads_watch":0,"leads_play":0}
 ]
