@@ -1,5 +1,4 @@
 [
-{"date":"2026-09-05","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-06","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-07","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-08","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
@@ -28,5 +27,6 @@
 {"date":"2026-10-01","visits":13,"unique":6,"by_source":{"direct":11,"facebook":1,"kaizenblueocean":1},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-02","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-03","visits":19,"unique":11,"by_source":{"direct":16,"kaizenblueocean":3},"leads_watch":0,"leads_play":0},
-{"date":"2026-10-04","visits":10,"unique":9,"by_source":{"direct":5,"facebook":3,"kaizenblueocean":2},"leads_watch":0,"leads_play":0}
+{"date":"2026-10-04","visits":10,"unique":9,"by_source":{"direct":5,"facebook":3,"kaizenblueocean":2},"leads_watch":0,"leads_play":0},
+{"date":"2026-10-05","visits":5,"unique":3,"by_source":{"direct":5},"leads_watch":0,"leads_play":0}
 ]
