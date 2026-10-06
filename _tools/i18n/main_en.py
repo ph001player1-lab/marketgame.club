@@ -151,7 +151,6 @@ SEG = {
   146: 'Mistakes here cost only points. Everything else is just like life.',
   147: '“Market Game” · team business simulation',
   148: 'Contact us: <a href="https://t.me/Nickbv">Telegram</a> · <a href="https://wa.me/66823204796">WhatsApp</a>',
-  149: '<a href="phuket/">Phuket Business League</a> — our offline community of entrepreneurs on the island',
   150: '<a href="privacy.html">Privacy policy</a>',
   151: 'Starting a business or already running one — test your strategy in a game before you put money behind it. One market, live competitors, a game year in a single session. Three leagues from $25 per team.',
   152: 'Test your strategy on a live market',

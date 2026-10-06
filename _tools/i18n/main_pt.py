@@ -240,7 +240,6 @@ T = {
   146: 'Aqui os erros custam só pontos. Todo o resto é como na vida.',
   147: '“Market Game” · simulação empresarial em equipe',
   148: 'Fale conosco: <a href="https://t.me/Nickbv">Telegram</a> · <a href="https://wa.me/66823204796">WhatsApp</a>',
-  149: '<a href="phuket/">Phuket Business League</a> — nossa comunidade presencial de empreendedores na ilha de Phuket',
   150: '<a href="privacy.html">Política de privacidade</a>',
   151: 'Vai abrir um negócio ou já tem um — teste sua estratégia num jogo antes de colocar dinheiro nela. Um mercado, concorrentes de verdade, um ano de jogo em uma única sessão. Três ligas a partir de US$ 25 por equipe.',
   152: 'Teste sua estratégia num mercado de verdade',

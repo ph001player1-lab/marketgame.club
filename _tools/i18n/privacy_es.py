@@ -40,7 +40,7 @@ T = {
   38: 'Si esta política cambia, la nueva versión aparecerá en esta página con una nueva fecha arriba. Avisaremos a las personas cuyas solicitudes guardamos sobre cualquier cambio importante.',
   39: '← Volver al sitio',
   40: '«Market Game» · simulación empresarial en equipo',
-  41: '<a href="./">Inicio</a> · <a href="phuket/">Phuket Business League</a>',
+  41: '<a href="./">Inicio</a>',
   42: 'Qué datos recopila el sitio marketgame.club, para qué se necesitan, quién puede verlos y cómo pedir que se borren.',
   43: 'noindex, follow',
 }

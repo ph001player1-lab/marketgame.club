@@ -10,8 +10,10 @@
    «уезжало» бы для участников дважды в год.
 
    Подписи, язык и список отменённых игр приходят из window.SCHEDULE_CONFIG,
-   объявленного в самой странице. Сетка игр общая для всех языков: на сайте
-   показываются все игры всех потоков, независимо от выбранного языка. */
+   объявленного в самой странице. Сеток две: российская (города России и онлайн
+   по Москве) — только на русской странице, и американская (США и
+   международные игры) — на всех остальных языках. Какую показывать, говорит
+   SCHEDULE_CONFIG.grid: 'ru' или 'us'. */
 
 (function () {
   'use strict';
@@ -31,7 +33,7 @@
   // штаты. Название и группа потока для фильтра — тоже в SCHEDULE_CONFIG.
   var ET = 'America/New_York', CT = 'America/Chicago', MT = 'America/Denver',
       PT = 'America/Los_Angeles', AZ = 'America/Phoenix', LON = 'Europe/London';
-  var RULES = [
+  var US_RULES = [
     // --- еженедельно: международный поток и четыре пояса, Лиги 12 и 24
     { league: 'l12', stream: 'intl',    weekday: 4, time: '19:00', tz: LON, hours: 2 },
     { league: 'l24', stream: 'intl',    weekday: 2, time: '19:00', tz: LON, hours: 2.5 },
@@ -68,6 +70,49 @@
     { league: 'l36', stream: 'central', weekday: 6, nth: 3, time: '10:00', tz: CT,  hours: 4 },
     { league: 'l36', stream: 'pacific', weekday: 6, nth: 4, time: '10:00', tz: PT,  hours: 4 }
   ];
+
+  // Российская сетка: онлайн-поток по Москве и десять городов в восьми
+  // часовых поясах. В России нет перехода на летнее время, но привязка
+  // к городу всё равно правильная: время назначено по местным часам.
+  var KGD = 'Europe/Kaliningrad', MSK = 'Europe/Moscow', SAM = 'Europe/Samara',
+      EKB = 'Asia/Yekaterinburg', OMS = 'Asia/Omsk', NSK = 'Asia/Novosibirsk',
+      IRK = 'Asia/Irkutsk', VVO = 'Asia/Vladivostok';
+  var RU_RULES = [
+    // --- еженедельно: онлайн по Москве, Москва, Петербург
+    { league: 'l12', stream: 'online', weekday: 2, time: '19:00', tz: MSK, hours: 2 },
+    { league: 'l24', stream: 'online', weekday: 4, time: '19:00', tz: MSK, hours: 2.5 },
+    { league: 'l12', stream: 'msk',    weekday: 3, time: '19:00', tz: MSK, hours: 2 },
+    { league: 'l24', stream: 'msk',    weekday: 6, time: '12:00', tz: MSK, hours: 2.5 },
+    { league: 'l12', stream: 'spb',    weekday: 1, time: '19:00', tz: MSK, hours: 2 },
+
+    // --- два раза в месяц: Лига 24 в Петербурге
+    { league: 'l24', stream: 'spb', weekday: 6, nth: 2, time: '12:00', tz: MSK, hours: 2.5 },
+    { league: 'l24', stream: 'spb', weekday: 6, nth: 4, time: '12:00', tz: MSK, hours: 2.5 },
+
+    // --- раз в месяц: остальные города, Лига 12 и Лига 24 в разные недели
+    { league: 'l12', stream: 'kgd', weekday: 4, nth: 1, time: '19:00', tz: KGD, hours: 2 },
+    { league: 'l24', stream: 'kgd', weekday: 4, nth: 3, time: '19:00', tz: KGD, hours: 2.5 },
+    { league: 'l12', stream: 'kzn', weekday: 6, nth: 1, time: '12:00', tz: MSK, hours: 2 },
+    { league: 'l24', stream: 'kzn', weekday: 6, nth: 3, time: '12:00', tz: MSK, hours: 2.5 },
+    { league: 'l12', stream: 'sam', weekday: 2, nth: 2, time: '19:00', tz: SAM, hours: 2 },
+    { league: 'l24', stream: 'sam', weekday: 2, nth: 4, time: '19:00', tz: SAM, hours: 2.5 },
+    { league: 'l12', stream: 'ekb', weekday: 3, nth: 2, time: '19:00', tz: EKB, hours: 2 },
+    { league: 'l24', stream: 'ekb', weekday: 6, nth: 4, time: '12:00', tz: EKB, hours: 2.5 },
+    { league: 'l12', stream: 'oms', weekday: 2, nth: 1, time: '19:00', tz: OMS, hours: 2 },
+    { league: 'l24', stream: 'oms', weekday: 2, nth: 3, time: '19:00', tz: OMS, hours: 2.5 },
+    { league: 'l12', stream: 'nsk', weekday: 4, nth: 2, time: '19:00', tz: NSK, hours: 2 },
+    { league: 'l24', stream: 'nsk', weekday: 4, nth: 4, time: '19:00', tz: NSK, hours: 2.5 },
+    { league: 'l12', stream: 'irk', weekday: 6, nth: 1, time: '12:00', tz: IRK, hours: 2 },
+    { league: 'l24', stream: 'irk', weekday: 6, nth: 3, time: '12:00', tz: IRK, hours: 2.5 },
+    { league: 'l12', stream: 'vvo', weekday: 6, nth: 2, time: '12:00', tz: VVO, hours: 2 },
+    { league: 'l24', stream: 'vvo', weekday: 6, nth: 4, time: '12:00', tz: VVO, hours: 2.5 },
+
+    // --- Лига 36 · 4 часа · раз в месяц, по субботам
+    { league: 'l36', stream: 'online', weekday: 6, nth: 1, time: '11:00', tz: MSK, hours: 4 },
+    { league: 'l36', stream: 'msk',    weekday: 6, nth: 3, time: '11:00', tz: MSK, hours: 4 }
+  ];
+
+  var RULES = C.grid === 'ru' ? RU_RULES : US_RULES;
 
   var HORIZON_DAYS = 75;
   var LIMIT = C.limit || 8;
