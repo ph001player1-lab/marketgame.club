@@ -1,4 +1,4 @@
-# Market Game (Рыночек Порешает)
+# Market Game (Бизнес Квест)
 
 > A team business simulation where crews compete for one shared market
 > over 12, 24 or 36 game months, all played in a single session. Built both
@@ -92,7 +92,14 @@ Open games run every week across the US and internationally, in English:
   Arizona, California and Washington;
 - international games on London time.
 
-About 60 open games a month in total. The live schedule, shown in the
+About 60 open games a month in total.
+
+The Russian version of the site (https://marketgame.club/ru/, where the game is
+called «Бизнес Квест») has its own schedule for the Russian market instead:
+online games on Moscow time plus open games in ten Russian cities across eight
+time zones — Kaliningrad, Moscow, Saint Petersburg, Kazan, Samara,
+Yekaterinburg, Omsk, Novosibirsk, Irkutsk and Vladivostok, about 40 games a
+month. US games are shown only on the non-Russian versions. The live schedule, shown in the
 visitor's own time zone: https://marketgame.club/#calendar
 
 ## Pages

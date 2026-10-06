@@ -40,7 +40,7 @@ T = {
   38: 'Nếu chính sách thay đổi, bản mới sẽ xuất hiện trên trang này kèm ngày mới ở đầu. Với những thay đổi quan trọng, chúng tôi sẽ báo riêng cho những người mà chúng tôi đang giữ đăng ký.',
   39: '← Quay lại trang chính',
   40: '«Market Game» · trò chơi kinh doanh đồng đội',
-  41: '<a href="./">Trang chính</a> · <a href="phuket/">Phuket Business League</a>',
+  41: '<a href="./">Trang chính</a>',
   42: 'Trang marketgame.club thu thập dữ liệu nào, để làm gì, ai được xem và cách yêu cầu xoá.',
   43: 'noindex, follow',
 }

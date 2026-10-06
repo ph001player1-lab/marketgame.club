@@ -40,7 +40,7 @@ SEG = {
   38: 'If this policy changes, the new version will appear on this page with a new date at the top. We will notify people whose requests we hold about any substantial change.',
   39: '← Back to the site',
   40: '“Market Game” · team business simulation',
-  41: '<a href="./">Home</a> · <a href="phuket/">Phuket Business League</a>',
+  41: '<a href="./">Home</a>',
   42: 'What data marketgame.club collects, why it is needed, who can see it and how to have it deleted.',
   43: 'noindex, follow',
 }

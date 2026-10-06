@@ -242,7 +242,6 @@ T = {
   146: 'Sai lầm ở đây chỉ tốn điểm số. Mọi thứ còn lại đúng như ngoài đời.',
   147: '«Market Game» · trò chơi kinh doanh đồng đội',
   148: 'Liên hệ với chúng tôi: <a href="https://t.me/Nickbv">Telegram</a> · <a href="https://wa.me/66823204796">WhatsApp</a>',
-  149: '<a href="phuket/">Phuket Business League</a> — cộng đồng doanh nhân trực tiếp của chúng tôi trên đảo Phuket',
   150: '<a href="privacy.html">Chính sách bảo mật</a>',
   151: 'Bạn sắp khởi nghiệp hay đã đang điều hành — hãy thử chiến lược trong một ván chơi trước khi bỏ tiền thật. Một thị trường chung, đối thủ thật, trọn một năm kinh doanh trong một buổi. Ba hạng đấu từ 650.000 ₫ mỗi đội.',
   152: 'Thử chiến lược trên thị trường thật',

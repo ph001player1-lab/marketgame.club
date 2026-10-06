@@ -44,6 +44,17 @@ STATES = {
 }
 GROUPS = {'intl': 'intl', 'eastern': 'et', 'ny': 'et', 'fl': 'et', 'central': 'ct', 'tx': 'ct', 'il': 'ct',
           'mountain': 'mt', 'co': 'mt', 'az': 'mt', 'pacific': 'pt', 'ca': 'pt', 'wa': 'pt'}
+# Российская сетка — только на русской странице. Часовой пояс и сдвиг от UTC
+# у каждого города; группа — для кнопок фильтра.
+RU_CITIES = [  # (поток, пояс, UTC+, группа)
+    ('kgd', 'Europe/Kaliningrad', 2, 'west'), ('msk', 'Europe/Moscow', 3, 'west'),
+    ('spb', 'Europe/Moscow', 3, 'west'), ('kzn', 'Europe/Moscow', 3, 'west'),
+    ('sam', 'Europe/Samara', 4, 'west'), ('ekb', 'Asia/Yekaterinburg', 5, 'sib'),
+    ('oms', 'Asia/Omsk', 6, 'sib'), ('nsk', 'Asia/Novosibirsk', 7, 'sib'),
+    ('irk', 'Asia/Irkutsk', 8, 'east'), ('vvo', 'Asia/Vladivostok', 10, 'east'),
+]
+RU_CLOCK_TZ = [('kgd', 'Europe/Kaliningrad'), ('msk', 'Europe/Moscow'), ('ekb', 'Asia/Yekaterinburg'),
+               ('nsk', 'Asia/Novosibirsk'), ('irk', 'Asia/Irkutsk'), ('vvo', 'Asia/Vladivostok')]
 ZONE_STREAMS = ('eastern', 'central', 'mountain', 'pacific')
 STATE_STREAMS = ('ny', 'fl', 'tx', 'il', 'co', 'az', 'ca', 'wa')
 FAQ_IDS = [(126, 127), (128, 129), (160, 161), (130, 131), (132, 133), (134, 135), (136, 137), (138, 139), (140, 141), (142, 143)]
@@ -122,8 +133,34 @@ def replace_block(s, start, new):
 
 # --- настройки календаря, формы, разметки ----------------------------------------
 
+def msk_shift(utc):
+    d = utc - 3
+    return 'МСК' if d == 0 else f'МСК{"+" if d > 0 else "−"}{abs(d)}'
+
+
 def schedule_cfg(lang, M, RU):
+    manager = {'locale': 'ru-RU', 'leagues': RU.LEAGUE_SHORT, 'streams': {**RU.STREAMS, **RU.RU_STREAMS}}
+    if lang == 'ru':
+        # российский рынок: города России и онлайн по Москве
+        states = {c: {'short': f'{msk_shift(u)} · UTC+{u}', 'full': f'{M.RU_STREAMS[c]}: UTC+{u}, {msk_shift(u)}'}
+                  for c, _, u, _ in RU_CITIES}
+        states['online'] = {'short': M.RU_ONLINE_NOTE, 'full': M.RU_ONLINE_NOTE}
+        return {
+            'grid': 'ru', 'locale': M.INTL_LOCALE, 'hour12': False, 'limit': 8,
+            'clocks': [{'label': M.RU_CLOCKS[k], 'tz': tz} for k, tz in RU_CLOCK_TZ],
+            'seo': {'name': M.BRAND, 'organizer': M.BRAND, 'url': url_of(lang),
+                    'currency': M.CURRENCY, 'prices': M.PRICES},
+            'leagues': M.LEAGUE_SHORT,
+            'streams': M.RU_STREAMS,
+            'kinds': {'online': M.RU_KIND['online'], **{c: M.RU_KIND['city'] for c, _, _, _ in RU_CITIES}},
+            'states': states,
+            'groups': {'online': 'online', **{c: g for c, _, _, g in RU_CITIES}},
+            'filters': [{'id': k, 'label': M.RU_FILTERS[k]} for k in ('all', 'west', 'sib', 'east', 'online')],
+            'text': M.SCHED_TEXT,
+            'manager': manager,
+        }
     return {
+        'grid': 'us',
         'locale': M.INTL_LOCALE, 'hour12': lang == 'en', 'limit': 8,
         'clocks': [{'label': M.CITY[k], 'tz': tz} for k, tz in CLOCK_TZ],
         'seo': {'name': M.BRAND, 'organizer': M.BRAND, 'url': url_of(lang),
@@ -137,7 +174,7 @@ def schedule_cfg(lang, M, RU):
         'groups': GROUPS,
         'filters': [{'id': k, 'label': M.FILTERS[k]} for k in ('all', 'et', 'ct', 'mt', 'pt', 'intl')],
         'text': M.SCHED_TEXT,
-        'manager': {'locale': 'ru-RU', 'leagues': RU.LEAGUE_SHORT, 'streams': RU.STREAMS},
+        'manager': manager,
     }
 
 
