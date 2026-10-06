@@ -1,5 +1,4 @@
 [
-{"date":"2026-09-06","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-07","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-08","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-09","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
@@ -28,5 +27,6 @@
 {"date":"2026-10-02","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-03","visits":19,"unique":11,"by_source":{"direct":16,"kaizenblueocean":3},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-04","visits":10,"unique":9,"by_source":{"direct":5,"facebook":3,"kaizenblueocean":2},"leads_watch":0,"leads_play":0},
-{"date":"2026-10-05","visits":12,"unique":7,"by_source":{"direct":12},"leads_watch":0,"leads_play":0}
+{"date":"2026-10-05","visits":16,"unique":9,"by_source":{"direct":16},"leads_watch":1,"leads_play":0},
+{"date":"2026-10-06","visits":2,"unique":2,"by_source":{"direct":2},"leads_watch":0,"leads_play":0}
 ]
