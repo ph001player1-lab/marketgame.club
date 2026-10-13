@@ -28,5 +28,5 @@
 {"date":"2026-10-10","visits":12,"unique":10,"by_source":{"direct":9,"marketgame.quest":3},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-11","visits":3,"unique":3,"by_source":{"direct":2,"kaizenblueocean":1},"leads_watch":1,"leads_play":0},
 {"date":"2026-10-12","visits":11,"unique":8,"by_source":{"marketgame.quest":9,"direct":2},"leads_watch":0,"leads_play":0},
-{"date":"2026-10-13","visits":10,"unique":8,"by_source":{"direct":4,"marketgame.quest":3,"yandex":3},"leads_watch":0,"leads_play":0}
+{"date":"2026-10-13","visits":18,"unique":15,"by_source":{"marketgame.quest":10,"direct":5,"yandex":3},"leads_watch":0,"leads_play":0}
 ]
