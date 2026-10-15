@@ -1,5 +1,4 @@
 [
-{"date":"2026-09-16","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":7},
 {"date":"2026-09-17","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":4},
 {"date":"2026-09-18","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-19","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":1},
@@ -28,5 +27,6 @@
 {"date":"2026-10-12","visits":11,"unique":8,"by_source":{"marketgame.quest":9,"direct":2},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-13","visits":19,"unique":15,"by_source":{"marketgame.quest":11,"direct":5,"yandex":3},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-14","visits":27,"unique":22,"by_source":{"marketgame.quest":15,"direct":11,"zarumnaiacouch.ru":1},"leads_watch":0,"leads_play":0},
-{"date":"2026-10-15","visits":19,"unique":16,"by_source":{"marketgame.quest":12,"direct":7},"leads_watch":1,"leads_play":0}
+{"date":"2026-10-15","visits":26,"unique":21,"by_source":{"marketgame.quest":16,"direct":10},"leads_watch":3,"leads_play":0},
+{"date":"2026-10-16","visits":2,"unique":2,"by_source":{"direct":2},"leads_watch":0,"leads_play":0}
 ]
