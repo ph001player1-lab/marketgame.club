@@ -5,6 +5,9 @@
 # репозитория — GitHub Pages публикует файл сам. Внутри только агрегаты по
 # дням: визиты, уникальные, источники, заявки Watch/Play.
 #
+# «Раз в час» — по расписанию; под нагрузкой GitHub пропускает часть запусков,
+# и на деле файл обновляется раз в несколько часов.
+#
 # Запустить вручную: вкладка Actions → stats.json → Run workflow.
 
 name: stats.json
@@ -25,15 +28,45 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       ENDPOINT: https://script.google.com/macros/s/AKfycbxE0kMC6oIlYu7r6wyIFLdjhnkD862wcumVuhh9k7uDW4CD8QnOKINW2HWd_IWopeQE/exec
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
+      # Google иногда отвечает на запрос ошибкой — чаще всего 404 после
+      # 20–30 секунд ожидания, когда скрипт запускается «с холода», — а через
+      # несколько секунд тот же адрес снова работает. Поэтому:
+      #  — повторяем при любой ошибке, включая 404 (обычный --retry её не повторяет);
+      #  — если Google так и не ответил, разовый сбой не роняем: файл обновит
+      #    следующий запуск. Падаем, только если stats.json не обновлялся
+      #    больше суток — это уже похоже на поломку, а не на сбой.
       - name: Забрать сводку
-        run: curl -fsSL --retry 3 --retry-delay 10 "$ENDPOINT?stats=1" -o /tmp/stats-raw.json
+        id: fetch
+        run: |
+          if curl -fsSL --retry 4 --retry-delay 15 --retry-all-errors \
+               --connect-timeout 20 --max-time 90 \
+               "$ENDPOINT?stats=1" -o /tmp/stats-raw.json; then
+            echo 'ok=1' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 - <<'PY'
+          import datetime, json, sys
+          today = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=7)).date()
+          try:
+              last = datetime.date.fromisoformat(json.load(open('stats.json'))[-1]['date'])
+          except Exception:
+              last = None
+          if last is None or (today - last).days > 1:
+              print(f'::error::Сводку получить не удалось, а stats.json не обновлялся с {last}. '
+                    'Проверьте Apps Script: адрес /exec?stats должен открываться в браузере.')
+              sys.exit(1)
+          print(f'::warning::Google не ответил на запрос сводки (разовый сбой). '
+                f'stats.json с данными по {last} обновит следующий запуск.')
+          PY
 
       - name: Проверить и записать
+        if: steps.fetch.outputs.ok == '1'
         run: |
           python3 - <<'PY'
           import json, re, sys
@@ -59,6 +92,7 @@ jobs:
 
       - name: Сохранить, если изменилось
         id: save
+        if: steps.fetch.outputs.ok == '1'
         run: |
           git diff --quiet -- stats.json && { echo 'Без изменений'; exit 0; }
           git config user.name 'stats-bot'
