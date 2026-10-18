@@ -1,5 +1,4 @@
 [
-{"date":"2026-09-19","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":1},
 {"date":"2026-09-20","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-21","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
 {"date":"2026-09-22","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0},
@@ -28,5 +27,6 @@
 {"date":"2026-10-15","visits":26,"unique":21,"by_source":{"marketgame.quest":16,"direct":10},"leads_watch":3,"leads_play":0},
 {"date":"2026-10-16","visits":28,"unique":9,"by_source":{"marketgame.quest":16,"direct":11,"yandex":1},"leads_watch":0,"leads_play":0},
 {"date":"2026-10-17","visits":18,"unique":14,"by_source":{"direct":18},"leads_watch":0,"leads_play":1},
-{"date":"2026-10-18","visits":6,"unique":5,"by_source":{"direct":6},"leads_watch":0,"leads_play":0}
+{"date":"2026-10-18","visits":7,"unique":5,"by_source":{"direct":7},"leads_watch":0,"leads_play":0},
+{"date":"2026-10-19","visits":0,"unique":0,"by_source":{},"leads_watch":0,"leads_play":0}
 ]
